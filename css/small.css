@@ -96,7 +96,7 @@ main, footer, header{
 .course-card.completed{border-left:6px solid var(--accent);box-shadow:0 6px 12px rgba(0,160,160,0.06)}
 
 /* footer */
-.site-footer{margin:1.25rem 0 2rem;color:var(--muted);text-align:center}
-.site-footer a{color:var(--nav-bg);text-decoration:none}
+.site-footer{margin:1.25rem 0 2rem;color:var(--muted);text-align:center;background: #0d2133;color: #fff; text-align: center; padding: 1rem; border-radius: 10px}
+.site-footer a{color:var(--nav-bg);text-decoration:none;color: #ffcc00}
 
 
