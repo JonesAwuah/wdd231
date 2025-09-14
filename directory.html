@@ -13,9 +13,9 @@
   <meta property="og:image" content="images/hero.jpg">
   <meta property="og:url" content="https://yourchamberdomain.com">
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="styles/all.min.css">
   <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
 
 </head>
 <body>
@@ -89,21 +89,19 @@
         <div class="content">No upcoming events — add sample events here.</div>
       </div>
       <div class="panel">
-        <h3>Current Weather</h3>
-     <img src="images/cloud.png" alt="weather icon" width="30"height="30">
-        <p><strong id="weatherTemp">24°C</strong></p>
-        <p id="weatherDesc">Partly Cloudy</p>
-        <p>High: 29° Low: 18°</p>  30
-         <p>Humidity: 34%</p>
-         <p>Sunrise: 7:30am</p>
-         <p>Sunset: 9:59pm</p>
+      <div id="weather">
+           <h3>Current Weather</h3> <img src="images/cloud.png" alt="weather icon" width="30"height="30">
       </div>
-      <div class="panel">
-        <h3>Weather Forecast</h3>
-        <p>Today: 29°C</p>
-        <p>Tomorrow: 28°C</p>
-        <p>Thu: 26°C</p>
+    </div>
+    <div class="panel">
+      <div id="forecast">
+          <h3>Weather Forecast</h3>
       </div>
+    </div>
+  </section>
+
+  <!-- ✅ Spotlight comes right after -->
+  <section id="spotlight" class="info-panel"></section>
     </section>
 
     <!-- Directory controls -->
@@ -160,6 +158,8 @@
   </footer>
 
   <script src="scripts/directory.js"></script>
+  <script src="scripts/weather.js" defer></script>
+<script src="scripts/spotlight.js" defer></script>
   <script>
     // Footer year + last modified
     document.getElementById("year").textContent = new Date().getFullYear();
