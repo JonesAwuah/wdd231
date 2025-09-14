@@ -82,27 +82,29 @@
       <button class="cta">Keynote Tickets</button>
     </section>
 
-    <!-- Info panels -->
-    <section class="info-panels">
-      <div class="panel">
-        <h3>Events</h3>
-        <div class="content">No upcoming events — add sample events here.</div>
-      </div>
-      <div class="panel">
-      <div id="weather">
-           <h3>Current Weather</h3> <img src="images/cloud.png" alt="weather icon" width="30"height="30">
-      </div>
-    </div>
-    <div class="panel">
-      <div id="forecast">
-          <h3>Weather Forecast</h3>
-      </div>
-    </div>
-  </section>
+    <!-- Info panels --> <section class="info-panels"> 
+        <div class="panel"> 
+            <h3>Events</h3> 
+            <div class="content">No upcoming events — add sample events here.</div> 
+        </div> 
+        <div class="panel"> 
+            <h3>Current Weather</h3> 
+            <img src="images/cloud.png" alt="weather icon" width="30"height="30"> 
+            <p><strong id="weatherTemp">24°C</strong></p> <p id="weatherDesc">Partly Cloudy</p> 
+            <p>High: 29° Low: 18°</p> 
+            <p>Humidity: 34%</p> 
+            <p>Sunrise: 7:30am</p> 
+            <p>Sunset: 9:59pm</p> 
+        </div> 
 
-  <!-- ✅ Spotlight comes right after -->
-  <section id="spotlight" class="info-panel"></section>
-    </section>
+            <div class="panel"> 
+                <h3>Weather Forecast</h3> 
+                <p>Today: 29°C</p>
+                <p>Tomorrow: 28°C</p> 
+                <p>Thu: 26°C</p> </div> 
+            </section>
+
+  
 
     <!-- Directory controls -->
     <section class="directory-controls">
@@ -158,8 +160,7 @@
   </footer>
 
   <script src="scripts/directory.js"></script>
-  <script src="scripts/weather.js" defer></script>
-<script src="scripts/spotlight.js" defer></script>
+  
   <script>
     // Footer year + last modified
     document.getElementById("year").textContent = new Date().getFullYear();
