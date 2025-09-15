@@ -91,13 +91,16 @@ nav a.active { color: var(--secondary-color); font-weight:700; }
 
 /* hamburger */
 .menu-btn {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   background: none; border: none; color: #fff; cursor: pointer; display:none;
 }
+
+
 
 body.dark-theme {
   background: #222;
   color: #eee;
+  
 }
 
 body.dark-theme header,
@@ -207,3 +210,25 @@ nav ul { overflow:hidden; transition: max-height .32s ease; max-height: 1000px; 
 
 /* small helpers */
 .visually-hidden { position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap }
+
+
+
+/* Theme toggle button */
+#theme-toggle {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.06); 
+  padding: 0;
+  font-size: 18px; 
+}
+
+
+#theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
