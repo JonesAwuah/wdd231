@@ -13,26 +13,30 @@ function formatTime(timestamp) {
   return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
 
+// ----------------------
 // Fetch Current Weather
+// ----------------------
 async function fetchCurrentWeather() {
   try {
     const response = await fetch(currentWeatherUrl);
     const data = await response.json();
 
-    // Main weather panel
+    // Update main weather panel if it exists
     const weatherDiv = document.getElementById("weather");
-    weatherDiv.innerHTML = `
-      <p><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" 
-              alt="${data.weather[0].description}"></p>
-      <p><strong>${Math.round(data.main.temp)}°C</strong></p>
-      <p>${data.weather[0].description}</p>
-      <p>High: ${Math.round(data.main.temp_max)}°C | Low: ${Math.round(data.main.temp_min)}°C</p>
-      <p>Humidity: ${data.main.humidity}%</p>
-      <p>Sunrise: ${formatTime(data.sys.sunrise)}</p>
-      <p>Sunset: ${formatTime(data.sys.sunset)}</p>
-    `;
+    if (weatherDiv) {
+      weatherDiv.innerHTML = `
+        <p><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" 
+                alt="${data.weather[0].description}"></p>
+        <p><strong>${Math.round(data.main.temp)}°C</strong></p>
+        <p>${data.weather[0].description}</p>
+        <p>High: ${Math.round(data.main.temp_max)}°C | Low: ${Math.round(data.main.temp_min)}°C</p>
+        <p>Humidity: ${data.main.humidity}%</p>
+        <p>Sunrise: ${formatTime(data.sys.sunrise)}</p>
+        <p>Sunset: ${formatTime(data.sys.sunset)}</p>
+      `;
+    }
 
-    // Header icon temperature
+    // Always update header icon temperature
     const tempLabel = document.querySelector(".temp-label");
     if (tempLabel) {
       tempLabel.textContent = `${Math.round(data.main.temp)}°C`;
@@ -43,13 +47,17 @@ async function fetchCurrentWeather() {
   }
 }
 
+// ----------------------
 // Fetch 3-Day Forecast
+// ----------------------
 async function fetchForecast() {
   try {
     const response = await fetch(forecastUrl);
     const data = await response.json();
 
     const forecastDiv = document.getElementById("forecast");
+    if (!forecastDiv) return; // Skip if not present
+
     forecastDiv.innerHTML = "";
 
     // Group by day and pick midday forecast
@@ -82,12 +90,14 @@ async function fetchForecast() {
   }
 }
 
+// ----------------------
 // Initialize
+// ----------------------
 fetchCurrentWeather();
 fetchForecast();
 
 
-// spotlight.js
+// spotlight.js (kept here since you pasted both in one file)
 
 // ----------------------
 // Mobile nav toggle
@@ -117,4 +127,3 @@ function getMembershipLabel(level) {
   if (level === 2) return "Silver";
   return "Member";
 }
-
