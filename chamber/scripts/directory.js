@@ -1,3 +1,15 @@
+// Highlight the current page in the nav
+  document.querySelectorAll("nav a").forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+
+
+
+
 // scripts/directory.js
 document.addEventListener("DOMContentLoaded", () => {
   // Elements

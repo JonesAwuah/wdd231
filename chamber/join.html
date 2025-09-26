@@ -120,29 +120,90 @@
   </section>
 
   <!-- Membership Levels Column -->
-  <aside class="membership-levels">
-    <h2>Membership Levels</h2>
+<aside class="membership-levels">
+  <h2>Membership Levels</h2>
 
-    <div class="level-card np">
-      <h3>Non Profit Membership Level</h3>
-      <button class="learn-btn" data-modal="modal-np">Learn More</button>
-    </div>
+  <div class="level-card np">
+    <h3>Non Profit Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-np">Learn More</button>
+  </div>
 
-    <div class="level-card bronze">
-      <h3>Bronze Membership Level</h3>
-      <button class="learn-btn" data-modal="modal-bronze">Learn More</button>
-    </div>
+  <div class="level-card bronze">
+    <h3>Bronze Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-bronze">Learn More</button>
+  </div>
 
-    <div class="level-card silver">
-      <h3>Silver Membership Level</h3>
-      <button class="learn-btn" data-modal="modal-silver">Learn More</button>
-    </div>
+  <div class="level-card silver">
+    <h3>Silver Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-silver">Learn More</button>
+  </div>
 
-    <div class="level-card gold">
-      <h3>Gold Membership Level</h3>
-      <button class="learn-btn" data-modal="modal-gold">Learn More</button>
-    </div>
-  </aside>
+  <div class="level-card gold">
+    <h3>Gold Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-gold">Learn More</button>
+  </div>
+</aside>
+
+<!-- Modals -->
+<div id="modal-np" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Non-Profit Membership</h3>
+    <p><em>Designed for charitable, educational, and community-focused organizations.</em></p>
+    <ul>
+      <li>Discounted membership fees to support non-profit operations.</li>
+      <li>Access to chamber networking events and community programs.</li>
+      <li>Listing in the chamber directory under “Community Partners.”</li>
+      <li>Opportunities to collaborate on service projects and local initiatives.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-bronze" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Bronze Membership</h3>
+    <p><em>Best for small businesses or startups looking to grow visibility.</em></p>
+    <ul>
+      <li>Full directory listing with contact details and business description.</li>
+      <li>Access to monthly chamber networking mixers.</li>
+      <li>Invitations to selected training workshops and seminars.</li>
+      <li>Recognition as a Bronze Member on chamber publications.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-silver" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Silver Membership</h3>
+    <p><em>Ideal for established businesses seeking greater exposure and influence.</em></p>
+    <ul>
+      <li>All Bronze Member benefits.</li>
+      <li>Enhanced directory listing with logo and website link.</li>
+      <li>Featured spotlight opportunity on the chamber website once a year.</li>
+      <li>Discounted booth space at chamber expos and events.</li>
+      <li>Access to Silver-only networking roundtables.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-gold" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Gold Membership</h3>
+    <p><em>For leaders who want maximum visibility and premium benefits.</em></p>
+    <ul>
+      <li>All Silver Member benefits.</li>
+      <li>Premium placement in the online directory.</li>
+      <li>Logo featured at chamber events and on promotional materials.</li>
+      <li>Priority sponsorship opportunities.</li>
+      <li>Complimentary tickets to the annual business gala.</li>
+      <li>Direct access to chamber leadership and policy discussions.</li>
+    </ul>
+  </div>
+</div>
+
 </main>
 
   <footer>
@@ -183,6 +244,7 @@
 
 
   <script>
+
 document.addEventListener("DOMContentLoaded", () => {
   const openButtons = document.querySelectorAll(".open-modal");
   const closeButtons = document.querySelectorAll(".close-modal");
@@ -211,6 +273,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".learn-btn");
+  const modals = document.querySelectorAll(".modal");
+  const closes = document.querySelectorAll(".close-modal");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modalId = btn.dataset.modal;
+      document.getElementById(modalId).style.display = "flex";
+    });
+  });
+
+  closes.forEach(close => {
+    close.addEventListener("click", () => {
+      close.closest(".modal").style.display = "none";
+    });
+  });
+
+  window.addEventListener("click", e => {
+    modals.forEach(modal => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  });
+});
+
+
+
+
 </script>
 
 </body>
