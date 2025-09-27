@@ -58,21 +58,21 @@ body {
 
 /* Title */
 .thank-you-card h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   color: var(--dark-color);
 }
 
 /* Submitted Data Box */
 .submission-data {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
+  margin: 0.3rem 0;
+  padding: 0.3rem;
   background: var(--accent-color);
   border-radius: 8px;
   text-align: left;
 }
 
 .submission-data p {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 
 .submission-data strong {
@@ -86,7 +86,7 @@ body {
 .thank-you-card p {
   font-size: 0.95rem;
   color: #555;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Button */
