@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home | Jones Chamber of Commerce</title>
+  <title>Join | Jones Chamber of Commerce</title>
   <meta name="description" content="Welcome to the Jones Chamber of Commerce — supporting businesses and community growth.">
   <meta name="author" content="Jones Makafui Awuah">
 
@@ -71,7 +71,7 @@
     </button>
   </header>
 
-   <main class="join-container">
+   <main id="main" class="join-container">
   <!-- Form Column -->
   <section class="join-form">
     <h2>Membership Application Form</h2>
@@ -245,34 +245,6 @@
 
   <script>
 
-document.addEventListener("DOMContentLoaded", () => {
-  const openButtons = document.querySelectorAll(".open-modal");
-  const closeButtons = document.querySelectorAll(".close-modal");
-  const modals = document.querySelectorAll(".modal");
-
-  // Open modal
-  openButtons.forEach(btn => {
-    btn.addEventListener("click", e => {
-      e.preventDefault();
-      const modalId = btn.dataset.modal;
-      document.getElementById(modalId).style.display = "flex";
-    });
-  });
-
-  // Close modal
-  closeButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      btn.closest(".modal").style.display = "none";
-    });
-  });
-
-  // Close when clicking outside modal content
-  window.addEventListener("click", e => {
-    modals.forEach(modal => {
-      if (e.target === modal) modal.style.display = "none";
-    });
-  });
-});
 
 
 
