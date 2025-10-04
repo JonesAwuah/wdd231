@@ -19,13 +19,17 @@
 .content { padding-bottom: 3rem; }
 
 /* intro */
-.intro { margin-bottom: 1rem; }
+.intro { margin-bottom: 1rem; max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 1.25rem;}
 .intro h1 { margin: 0 0 .4rem; font-size: 2rem; color: var(--accent); }
 .intro p { margin: 0 0 .8rem; color: var(--muted); }
 .visit-message { margin-top: .6rem; font-weight:600; color: #0b566f; }
 
 /* grid container: will change grid-template-areas per breakpoint */
 .discover-grid {
+  max-width: var(--wrap);
+  margin: 0 auto;
   display: grid;
   gap: var(--gap);
   margin-top: 1rem;
