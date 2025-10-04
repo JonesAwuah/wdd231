@@ -28,98 +28,86 @@
 
 /* grid container: will change grid-template-areas per breakpoint */
 .discover-grid {
-  max-width: var(--wrap);
-  margin: 0 auto;
   display: grid;
-  gap: var(--gap);
-  margin-top: 1rem;
-  align-items: start;
-  /* default small layout (single column stacking) */
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    "card5"
-    "card6"
-    "card7"
-    "card8";
-  padding-bottom: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  align-items: stretch; /* ensures all cards align evenly */
 }
 
-/* Each card same fixed height regardless of image proportions */
+/* Each card: same size regardless of content */
 .card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: var(--light-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;       /* 🔹 fixed consistent height */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Figure wrapper */
+.card figure {
+  margin: 0;
+  width: 100%;
+  height: 200px;        /* 🔹 fixed consistent image area */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Image: same size and cropped */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* 🔹 crops image proportionally */
+  display: block;
+}
+
+/* Content area */
+.card-body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 360px; /* ensures uniform height */
-  max-height: 360px;
-  overflow: hidden;
+  flex: 1;
 }
 
-/* Keep the figure consistent */
-.card figure {
-  margin: 0;
-  overflow: hidden;
-  border-radius: 6px;
-  flex-shrink: 0;
-}
-
-/* Make images uniform by cropping */
-.card img {
-  width: 100%;
-  height: 200px;           /* fixed consistent height */
-  object-fit: cover;       /* crops to fill the box */
-  display: block;
-  transition: transform .35s ease, filter .35s ease;
-}
-
-/* The text area below the image fills the rest */
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1; /* makes content stretch evenly */
-}
-
+/* Headings and text */
 .card h2 {
-  margin: 0;
-  font-size: 1.05rem;
-  color: #102331;
-}
-
-.card address {
-  font-style: normal;
-  color: var(--muted);
-  font-size: .9rem;
-  margin-bottom: .4rem;
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  color: #003366; /* deep blue brand color */
 }
 
 .card p {
-  margin: 0 0 .8rem;
-  color: #334;
+  margin: 0 0 1rem;
+  color: #333;
+  font-size: 0.95rem;
   line-height: 1.4;
 }
 
-.card .actions {
-  margin-top: auto;
+/* Button */
+.card .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #00a5cf; /* aqua accent */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.3s ease;
 }
 
-.btn {
-  display:inline-block;
-  padding:.5rem .9rem;
-  border-radius: 6px;
-  background: var(--accent);
-  color: #fff;
-  text-decoration:none;
-  font-weight:600;
-  font-size:.95rem;
-  text-align:center;
+.card .btn:hover {
+  background-color: #0089aa;
 }
 
 
