@@ -1,0 +1,148 @@
+/* discover.css - page specific */
+:root{
+  --wrap: 1100px;
+  --gap: 20px;
+  --card-bg: #fff;
+  --muted: #6b7a86;
+  --accent: #0c4b78;
+  --radius: 10px;
+  --shadow: 0 6px 18px rgba(10,20,30,0.06);
+  --max-image-width: 300px;
+}
+
+/* basic spacing & container 
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 1.25rem;
+} */
+.content { padding-bottom: 3rem; }
+
+/* intro */
+.intro { margin-bottom: 1rem; }
+.intro h1 { margin: 0 0 .4rem; font-size: 2rem; color: var(--accent); }
+.intro p { margin: 0 0 .8rem; color: var(--muted); }
+.visit-message { margin-top: .6rem; font-weight:600; color: #0b566f; }
+
+/* grid container: will change grid-template-areas per breakpoint */
+.discover-grid {
+  display: grid;
+  gap: var(--gap);
+  margin-top: 1rem;
+  align-items: start;
+  /* default small layout (single column stacking) */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  padding-bottom: 1rem;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  min-height: 220px;
+}
+.card figure {
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform .35s ease, filter .35s ease;
+}
+.card h2 { margin: 0; font-size: 1.05rem; color: #102331; }
+.card address { font-style: normal; color: var(--muted); font-size: .9rem; }
+.card p { margin: .3rem 0 .8rem; color: #334; }
+.card .actions { margin-top: auto; }
+.btn {
+  display:inline-block;
+  padding:.5rem .9rem;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:.95rem;
+}
+
+/* Hover effect - only for devices with fine pointer (no touch) */
+@media (pointer: fine) {
+  .card img:hover {
+    transform: scale(1.06);
+    filter: brightness(.95) contrast(1.02);
+  }
+}
+
+/* MEDIA - medium screens: 641px - 1024px
+   Use grid-template-areas to place cards in 2 columns or grouped layout
+*/
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+/* MEDIA - large screens: 1025px and above
+   Use a more magazine-style layout; show 3 columns for the card area.
+*/
+@media (min-width: 1025px) {
+  .discover-grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card8"; /* example: last row spans */
+  }
+  /* Slightly larger card image height on large screens */
+  .card { min-height: 260px; }
+}
+
+/* accessibility focus */
+a:focus, button:focus {
+  outline: 3px solid #cfeff7;
+  outline-offset: 2px;
+}
+
+/* Modal basic styles */
+.modal {
+  position: fixed;
+  inset: 0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+.modal[aria-hidden="false"]{ display:flex; }
+.modal-inner {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  max-width: 760px;
+  width: 94%;
+  box-shadow: var(--shadow);
+}
+.modal-close { background:none; border:none; font-size:1.1rem; float:right; cursor:pointer; }
