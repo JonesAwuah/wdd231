@@ -3,56 +3,56 @@
     "id": "site-1",
     "title": "Riverside Park",
     "address": "123 River Lane",
-    "image": "images/riverside-park.webp",
+    "image": "images/riverside-park.jpg",
     "description": "A scenic riverside park with walking trails, picnic areas, and a playground."
   },
   {
     "id": "site-2",
     "title": "Old Town Market",
     "address": "5 Main Street",
-    "image": "images/old-town-market.webp",
+    "image": "images/old-town-market.jpg",
     "description": "An open-air market with local vendors, crafts, and fresh produce."
   },
   {
     "id": "site-3",
     "title": "Heritage Museum",
     "address": "10 Museum Ave",
-    "image": "images/heritage-museum.webp",
+    "image": "images/heritage-museum.jpeg",
     "description": "Local history exhibits and rotating galleries highlighting our community."
   },
   {
     "id": "site-4",
     "title": "Lakeside Trails",
     "address": "Lake Road",
-    "image": "images/lakeside-trails.webp",
+    "image": "images/lakeside-trails.jpeg",
     "description": "Enjoy biking and hiking trails that circle the scenic lake."
   },
   {
     "id": "site-5",
     "title": "Downtown Theater",
     "address": "25 Center Street",
-    "image": "images/downtown-theater.webp",
+    "image": "images/downtown-theater.jpeg",
     "description": "A restored 1920s theater hosting concerts, plays, and community events."
   },
   {
     "id": "site-6",
     "title": "Artisan Coffee Co.",
     "address": "88 Market Square",
-    "image": "images/artisan-coffee.webp",
+    "image": "images/artisan-coffee.jpeg",
     "description": "Locally roasted coffee and a friendly space for remote work."
   },
   {
     "id": "site-7",
     "title": "Tech Innovation Hub",
     "address": "200 Commerce Way",
-    "image": "images/tech-hub.webp",
+    "image": "images/tech-hub.jpeg",
     "description": "Co-working, mentorship, and startup events for entrepreneurs."
   },
   {
     "id": "site-8",
     "title": "Botanical Garden",
     "address": "7 Green Blvd",
-    "image": "images/botanical-garden.webp",
+    "image": "images/botanical-garden.jpeg",
     "description": "Beautiful gardens, greenhouse, and seasonal flower exhibits."
   }
 ]
