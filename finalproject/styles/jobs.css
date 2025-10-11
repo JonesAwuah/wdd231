@@ -1,0 +1,152 @@
+:root {
+  --deep-blue: #0c4b78;
+  --accent: #007bff;
+  --light-bg: #f5f8fd;
+  --muted: #6b7a86;
+  --white: #ffffff;
+  --font-main: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  background: var(--light-bg);
+  color: var(--deep-blue);
+}
+
+/* SEARCH SECTION */
+.job-search {
+  background: #e8f1fb;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.job-search h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.job-search p {
+  color: var(--muted);
+  margin-bottom: 1.8rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 50px;
+  max-width: 950px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar select,
+.search-bar button {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+}
+
+.search-bar select {
+  background: #f7f7f7;
+  color: var(--deep-blue);
+  min-width: 180px;
+}
+
+.search-bar button {
+  background: var(--accent);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.search-bar button:hover {
+  background: #005ec4;
+}
+
+/* FEATURED JOBS SECTION */
+.featured-jobs {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.featured-jobs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.featured-jobs p {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.job-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+/* JOB CARD */
+.job-card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.job-card h3 {
+  margin: 0;
+  color: var(--deep-blue);
+}
+
+.job-card p {
+  color: var(--muted);
+  margin: 0.2rem 0;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.job-meta span {
+  background: #f2f8ff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 20px;
+  color: var(--deep-blue);
+  font-weight: 500;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-load {
+  background: var(--accent);
+  border: none;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-load:hover {
+  background: #005ec4;
+}

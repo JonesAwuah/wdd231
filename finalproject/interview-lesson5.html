@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 5 – After the Interview | Interview Coaching</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #0c4b78;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    .progress-container {
+      background: #e9ecef;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 15px;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-bar {
+      width: 100%; /* Lesson 5 of 5 */
+      height: 100%;
+      background: #007bff;
+      transition: width 0.4s ease;
+    }
+
+    .quiz-section {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f9fafb;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .quiz-section h3 {
+      color: #007bff;
+    }
+
+    .question {
+      margin: 1rem 0;
+    }
+
+    label {
+      display: block;
+      margin: 0.4rem 0;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .next-btn {
+      background-color: #28a745;
+      color: #fff;
+      margin-left: 10px;
+    }
+
+    .next-btn:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+    .back-btn {
+      background-color: #6c757d;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+    }
+
+    .example {
+      background: #f2f8ff;
+      padding: 1rem;
+      border-left: 4px solid #00a8e8;
+      margin: 1rem 0;
+    }
+
+    /* Popup Notification */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: white;
+      color: #333;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      text-align: center;
+      z-index: 999;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .popup.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popup h2 {
+      color: #28a745;
+      margin-bottom: 1rem;
+    }
+
+    .popup button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .popup button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lesson 5: After the Interview</h1>
+    <p>The interview isn’t over when you leave the room — learn how to follow up professionally and strengthen your impression.</p>
+  </header>
+
+  <main>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <p><strong>Progress:</strong> Lesson 5 of 5 (100%)</p>
+
+    <section class="lesson-content">
+      <h2>🎥 Watch the Training Video</h2>
+      <video controls>
+        <source src="videos/after-interview.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Lesson Summary:</h3>
+      <ul>
+        <li>Send a thank-you email within 24 hours.</li>
+        <li>Reflect on your performance and identify areas for improvement.</li>
+        <li>Follow up politely if you haven’t heard back after 1–2 weeks.</li>
+        <li>Stay positive and continue applying for other opportunities.</li>
+      </ul>
+
+      <div class="example">
+        <strong>Example:</strong><br>
+        A short, professional thank-you email can make you stand out and remind interviewers of your enthusiasm.
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <h3>Lesson Quiz – After the Interview</h3>
+      <form id="quizForm">
+        <div class="question">
+          <p><strong>1.</strong> When should you send a thank-you email after an interview?</p>
+          <label><input type="radio" name="q1" value="a"> Within 24 hours.</label>
+          <label><input type="radio" name="q1" value="b"> A month later.</label>
+          <label><input type="radio" name="q1" value="c"> Only if you’re offered the job.</label>
+        </div>
+
+        <div class="question">
+          <p><strong>2.</strong> What should you do if you don’t hear back after 1–2 weeks?</p>
+          <label><input type="radio" name="q2" value="a"> Follow up politely to show continued interest.</label>
+          <label><input type="radio" name="q2" value="b"> Complain about the delay.</label>
+          <label><input type="radio" name="q2" value="c"> Ignore the employer forever.</label>
+        </div>
+
+        <div class="question">
+          <p><strong>3.</strong> Why should you reflect on your interview performance?</p>
+          <label><input type="radio" name="q3" value="a"> To identify ways to improve for future interviews.</label>
+          <label><input type="radio" name="q3" value="b"> To criticize the interviewer.</label>
+          <label><input type="radio" name="q3" value="c"> To forget about the interview quickly.</label>
+        </div>
+
+        <button type="button" class="btn submit-btn" id="submitQuiz">Submit Quiz</button>
+        <button type="button" class="btn next-btn" id="nextLessonBtn" disabled>🎤 Start Live Interview →</button>
+      </form>
+      <p id="resultMessage" style="margin-top:1rem;font-weight:600;"></p>
+    </section>
+
+    <div style="margin-top:2rem;">
+      <a href="interview-lesson4.html" class="btn back-btn">← Previous Lesson</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Job Seekers | Interview Coaching Program
+  </footer>
+
+  <!-- POPUP -->
+  <div class="popup" id="popup">
+    <h2>🎉 You’re Ready!</h2>
+    <p>Congratulations! You’ve successfully completed all lessons and passed the final quiz.</p>
+    <button id="startInterviewBtn">Start Live Interview</button>
+  </div>
+
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const submitQuiz = document.getElementById('submitQuiz');
+    const nextLessonBtn = document.getElementById('nextLessonBtn');
+    const resultMessage = document.getElementById('resultMessage');
+    const popup = document.getElementById('popup');
+    const startInterviewBtn = document.getElementById('startInterviewBtn');
+
+    const correctAnswers = {
+      q1: 'a',
+      q2: 'a',
+      q3: 'a'
+    };
+
+    submitQuiz.addEventListener('click', () => {
+      const formData = new FormData(quizForm);
+      let score = 0;
+      for (let [q, ans] of Object.entries(correctAnswers)) {
+        if (formData.get(q) === ans) score++;
+      }
+
+      const percent = (score / Object.keys(correctAnswers).length) * 100;
+      if (percent >= 70) {
+        resultMessage.style.color = 'green';
+        resultMessage.textContent = `✅ Excellent! You scored ${percent}%. You’ve completed the program!`;
+        nextLessonBtn.disabled = false;
+        localStorage.setItem('lesson5Passed', 'true');
+
+        // Show popup
+        setTimeout(() => popup.classList.add('active'), 600);
+      } else {
+        resultMessage.style.color = 'red';
+        resultMessage.textContent = `❌ You scored ${percent}%. Try again to pass the final lesson.`;
+      }
+    });
+
+    startInterviewBtn.addEventListener('click', () => {
+      window.location.href = 'interview-live.html';
+    });
+  </script>
+</body>
+</html>

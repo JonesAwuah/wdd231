@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 2 – Contact Information & Summary | Resume Mastery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #0c4b78;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    .progress-container {
+      background: #e9ecef;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 15px;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-bar {
+      width: 25%; /* 2 of 8 lessons */
+      height: 100%;
+      background: #007bff;
+      transition: width 0.4s ease;
+    }
+
+    .quiz-section {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f9fafb;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .quiz-section h3 {
+      color: #007bff;
+    }
+
+    .question {
+      margin: 1rem 0;
+    }
+
+    label {
+      display: block;
+      margin: 0.4rem 0;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .next-btn {
+      background-color: #28a745;
+      color: #fff;
+      margin-left: 10px;
+    }
+
+    .next-btn:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+    .back-btn {
+      background-color: #6c757d;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+    }
+
+    .example {
+      background: #f2f8ff;
+      padding: 1rem;
+      border-left: 4px solid #00a8e8;
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lesson 2: Contact Information & Summary</h1>
+    <p>Learn how to make a great first impression by presenting your contact details and professional summary effectively.</p>
+  </header>
+
+  <main>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <p><strong>Progress:</strong> Lesson 2 of 8 (25%)</p>
+
+    <section class="lesson-content">
+      <h2>Crafting a Strong Introduction</h2>
+      <p>Your contact information and professional summary are the first things employers see on your resume. A clean, accurate presentation ensures they can reach you easily and get an instant sense of your professional value.</p>
+
+      <h3>Contact Information Essentials:</h3>
+      <ul>
+        <li>Include your <strong>full name</strong>, <strong>phone number</strong>, <strong>professional email</strong>, and <strong>location (city, country)</strong>.</li>
+        <li>Include links to your <strong>LinkedIn profile</strong> or <strong>portfolio website</strong> if relevant.</li>
+        <li>Avoid using unprofessional email addresses (e.g., “cooldude@gmail.com”).</li>
+      </ul>
+
+      <div class="example">
+        <strong>✅ Example:</strong><br>
+        <em>Mary Johnson</em> | Accra, Ghana | (233) 555-4321 | mary.johnson@gmail.com | linkedin.com/in/maryjohnson
+      </div>
+
+      <h3>Writing a Compelling Summary:</h3>
+      <p>Your summary should highlight your top skills, experience level, and what makes you unique. Keep it concise — about 3–4 sentences that capture your strengths and career goals.</p>
+
+      <div class="example">
+        <strong>❌ Weak Example:</strong><br>
+        “I am looking for a job that helps me learn new things.”<br><br>
+        <strong>✅ Strong Example:</strong><br>
+        “Results-driven administrative professional with 4+ years of experience supporting office operations and improving efficiency. Skilled in organization, scheduling, and communication, with a strong record of reliability and team collaboration.”
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <h3>Lesson Quiz – Contact Information & Summary</h3>
+      <form id="quizForm">
+        <div class="question">
+          <p><strong>1.</strong> What should always be included in your contact section?</p>
+          <label><input type="radio" name="q1" value="a"> Full name, phone, and email</label>
+          <label><input type="radio" name="q1" value="b"> Only your name</label>
+          <label><input type="radio" name="q1" value="c"> Favorite quote and hobbies</label>
+        </div>
+
+        <div class="question">
+          <p><strong>2.</strong> What makes an email address professional?</p>
+          <label><input type="radio" name="q2" value="a"> It uses your real name</label>
+          <label><input type="radio" name="q2" value="b"> It includes nicknames or slang</label>
+          <label><input type="radio" name="q2" value="c"> It ends with your favorite number</label>
+        </div>
+
+        <div class="question">
+          <p><strong>3.</strong> How long should your summary be?</p>
+          <label><input type="radio" name="q3" value="a"> 1–2 sentences only</label>
+          <label><input type="radio" name="q3" value="b"> 3–4 concise sentences</label>
+          <label><input type="radio" name="q3" value="c"> A full page of details</label>
+        </div>
+
+        <div class="question">
+          <p><strong>4.</strong> Which summary example is stronger?</p>
+          <label><input type="radio" name="q4" value="a"> “I want to find a job that helps me grow.”</label>
+          <label><input type="radio" name="q4" value="b"> “Customer-focused sales associate with 5 years of experience exceeding sales goals and improving client relationships.”</label>
+          <label><input type="radio" name="q4" value="c"> “Hardworking and friendly.”</label>
+        </div>
+
+        <div class="question">
+          <p><strong>5.</strong> True or False: You should list your full home address on a modern resume.</p>
+          <label><input type="radio" name="q5" value="a"> True</label>
+          <label><input type="radio" name="q5" value="b"> False</label>
+        </div>
+
+        <button type="button" class="btn submit-btn" id="submitQuiz">Submit Quiz</button>
+        <button type="button" class="btn next-btn" id="nextLessonBtn" disabled>Next Lesson →</button>
+      </form>
+      <p id="resultMessage" style="margin-top:1rem;font-weight:600;"></p>
+    </section>
+
+    <div style="margin-top:2rem;">
+      <a href="lesson1.html" class="btn back-btn">← Previous Lesson</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Resume Mastery | All Rights Reserved
+  </footer>
+
+  <script>
+    if (!localStorage.getItem('lesson1Passed')) {
+      alert("You must complete Lesson 1 before accessing Lesson 2.");
+      window.location.href = "lesson1.html";
+    }
+
+    const quizForm = document.getElementById('quizForm');
+    const submitQuiz = document.getElementById('submitQuiz');
+    const nextLessonBtn = document.getElementById('nextLessonBtn');
+    const resultMessage = document.getElementById('resultMessage');
+
+    const correctAnswers = {
+      q1: 'a',
+      q2: 'a',
+      q3: 'b',
+      q4: 'b',
+      q5: 'b'
+    };
+
+    submitQuiz.addEventListener('click', () => {
+      const formData = new FormData(quizForm);
+      let score = 0;
+      for (let [q, ans] of Object.entries(correctAnswers)) {
+        if (formData.get(q) === ans) score++;
+      }
+
+      const percent = (score / Object.keys(correctAnswers).length) * 100;
+      if (percent >= 70) {
+        resultMessage.style.color = 'green';
+        resultMessage.textContent = `✅ Excellent! You scored ${percent}%. You may proceed to the next lesson.`;
+        nextLessonBtn.disabled = false;
+        localStorage.setItem('lesson2Passed', 'true');
+      } else {
+        resultMessage.style.color = 'red';
+        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to move on. Try again!`;
+      }
+    });
+
+    nextLessonBtn.addEventListener('click', () => {
+      window.location.href = 'lesson3.html';
+    });
+  </script>
+</body>
+</html>

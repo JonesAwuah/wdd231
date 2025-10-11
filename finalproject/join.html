@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Join Our Community | Job Seekers</title>
+  <meta name="description" content="Join the Job Seekers community to access exclusive resources, job alerts, and professional career support." />
+  <meta name="author" content="Job Seekers" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/resources.css">
+
+  <style>
+    .join-section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .join-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .join-content h2 {
+      color: #0c4b78;
+      margin-bottom: 1rem;
+    }
+
+    .join-content p {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .join-content ul {
+      margin-left: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .join-form {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .join-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #0c4b78;
+    }
+
+    .join-form input,
+    .join-form select {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .join-form button {
+      background: #0c4b78;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .join-form button:hover {
+      background: #00a5cf;
+    }
+
+    .contact-cta {
+      background: #fff;
+      color: #0c4b78;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-top: 3rem;
+    }
+
+    .contact-cta .btn {
+      background: #0c4b78;
+      color: #fff;
+      border-radius: 6px;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .contact-cta .btn:hover {
+      background: #00a5cf;
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .join-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Job Seekers logo" class="logo">
+        <span class="site-name">Job Seekers</span>
+      </div>
+      <button id="menuToggle" class="hamburger">☰</button>
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="top-actions">
+        <a href="join.html" class="btn small active">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-header">
+    <h1>Join Our Professional Community</h1>
+    <p>Become part of Ghana’s trusted career development network and gain access to exclusive resources, tools, and mentorship.</p>
+  </section>
+
+  <!-- MAIN SECTION -->
+  <section class="join-section">
+    <div class="join-grid">
+      <div class="join-content">
+        <h2>Why Join Job Seekers?</h2>
+        <p>As a member, you’ll receive support tailored to your career goals and access opportunities that can shape your future.</p>
+        <ul>
+          <li>Receive curated job alerts matching your skills.</li>
+          <li>Access professional resume and interview tools.</li>
+          <li>Get invited to workshops and networking events.</li>
+          <li>Connect with mentors and employers across industries.</li>
+        </ul>
+      </div>
+
+      <div class="join-form">
+        <h2>Register Now</h2>
+        <form id="joinForm" onsubmit="joinSubmit(event)">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="interest">Area of Interest</label>
+          <select id="interest" name="interest" required>
+            <option value="">Select your area</option>
+            <option value="resume">Resume Development</option>
+            <option value="interview">Interview Coaching</option>
+            <option value="networking">Networking</option>
+            <option value="career">Career Growth</option>
+          </select>
+
+          <button type="submit">Join Community</button>
+          <p id="joinStatus" style="margin-top:1rem;color:#0c4b78;font-weight:600;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta">
+    <h2>Ready to Advance Your Career?</h2>
+    <p>Start by connecting with professionals and mentors who can guide your journey.</p>
+    <a href="resources.html" class="btn">Explore Resources</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
+        <p>
+          At <strong>Job Seekers</strong>, we provide trusted career advice, resume tools, and professional growth resources for individuals across Ghana.
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resume-tools.html">Resume Tools</a></li>
+          <li><a href="interview-coaching.html">Interview Coaching</a></li>
+          <li><a href="application-tips.html">Application Tips</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Website</a></li>
+          <li><a href="mailto:info@jobseekers.com">Email</a></li>
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">Telephone</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Job Seekers</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function joinSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('fullname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const area = document.getElementById('interest').value;
+
+      if (name && email && area) {
+        document.getElementById('joinStatus').textContent = "✅ You’ve successfully joined Job Seekers Community!";
+        document.getElementById('joinForm').reset();
+      } else {
+        document.getElementById('joinStatus').textContent = "⚠️ Please fill in all fields.";
+      }
+    }
+  </script>
+</body>
+</html>

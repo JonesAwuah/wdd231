@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us | Job Seekers</title>
+  <meta name="description" content="Contact Job Seekers for support, partnership inquiries, or career guidance assistance." />
+  <meta name="author" content="Job Seekers" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/resources.css">
+
+  <style>
+    .contact-section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #0c4b78;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .contact-form button {
+      background: #0c4b78;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #00a5cf;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info h3 {
+      color: #0c4b78;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 1.5rem;
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    @media(max-width: 900px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Job Seekers logo" class="logo">
+        <span class="site-name">Job Seekers</span>
+      </div>
+      <button id="menuToggle" class="hamburger">☰</button>
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="top-actions">
+        <a href="join.html" class="btn small">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-header">
+    <h1>Contact Us</h1>
+    <p>Have a question, suggestion, or partnership idea? We’d love to hear from you.</p>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formStatus" style="margin-top:1rem;color:#0c4b78;font-weight:600;"></p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>📍 Address:</strong> Accra Digital Centre, Ring Road West, Accra, Ghana</p>
+      <p><strong>📧 Email:</strong> <a href="mailto:info@jobseekers.com">info@jobseekers.com</a></p>
+      <p><strong>📞 Phone:</strong> +233 55 123 4567</p>
+      <p><strong>🕒 Working Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+
+      <iframe 
+        src="https://www.google.com/maps?q=Accra%20Digital%20Centre%20Ghana&output=embed" 
+        class="map" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta">
+    <h2>Join Our Community</h2>
+    <p>Connect with Job Seekers to receive job alerts, resources, and professional tips.</p>
+    <a href="resources.html" class="btn">Explore Resources</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
+        <p>
+          At <strong>Job Seekers</strong>, we provide trusted career advice, resume tools, and professional growth resources for individuals across Ghana.
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resume-tools.html">Resume Tools</a></li>
+          <li><a href="interview-coaching.html">Interview Coaching</a></li>
+          <li><a href="career-guides.html">Career Guides</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">🌐 Website</a></li>
+          <li><a href="mailto:info@jobseekers.com">📧 Email</a></li>
+          <li><a href="#">📱 WhatsApp</a></li>
+          <li><a href="#">📞 Telephone</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Job Seekers</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name && email && message) {
+        document.getElementById('formStatus').textContent = "✅ Message sent successfully! We’ll get back to you soon.";
+        document.getElementById('contactForm').reset();
+      } else {
+        document.getElementById('formStatus').textContent = "⚠️ Please fill out all fields.";
+      }
+    }
+  </script>
+</body>
+</html>

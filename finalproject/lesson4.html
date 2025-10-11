@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 4 – Education Background | Resume Mastery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #0c4b78;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    .progress-container {
+      background: #e9ecef;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 15px;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-bar {
+      width: 50%; /* 4 of 8 lessons */
+      height: 100%;
+      background: #007bff;
+      transition: width 0.4s ease;
+    }
+
+    .quiz-section {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f9fafb;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .quiz-section h3 {
+      color: #007bff;
+    }
+
+    .question {
+      margin: 1rem 0;
+    }
+
+    label {
+      display: block;
+      margin: 0.4rem 0;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .next-btn {
+      background-color: #28a745;
+      color: #fff;
+      margin-left: 10px;
+    }
+
+    .next-btn:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+    .back-btn {
+      background-color: #6c757d;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+    }
+
+    .example {
+      background: #f2f8ff;
+      padding: 1rem;
+      border-left: 4px solid #00a8e8;
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lesson 4: Education Background</h1>
+    <p>Showcase your educational journey in a way that strengthens your career story.</p>
+  </header>
+
+  <main>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <p><strong>Progress:</strong> Lesson 4 of 8 (50%)</p>
+
+    <section class="lesson-content">
+      <h2>Highlighting Your Education the Right Way</h2>
+      <p>The Education section of your resume is more than just a list of schools — it’s a chance to show your foundation of skills and commitment to learning. Whether you’re a student, recent graduate, or experienced professional, this section must reflect relevance and credibility.</p>
+
+      <h3>Key Tips:</h3>
+      <ul>
+        <li>List your <strong>most recent education first</strong>.</li>
+        <li>Include your <strong>degree, institution, and graduation year</strong>.</li>
+        <li>Add <strong>honors, awards, or coursework</strong> if they relate to your target job.</li>
+        <li>If you lack work experience, place this section <strong>above</strong> work experience.</li>
+      </ul>
+
+      <div class="example">
+        <strong>Example Format:</strong><br>
+        <em>Bachelor of Science in Computer Science</em><br>
+        University of Ghana, Legon — <strong>Graduated: 2023</strong><br>
+        - Relevant Coursework: Data Structures, Web Development, Software Engineering<br>
+        - Awarded Dean’s Honor (2022)
+      </div>
+
+      <h3>Bonus Tip:</h3>
+      <p>If you’re currently pursuing a degree, include your <em>expected graduation date</em>. This shows employers you’re actively learning and progressing.</p>
+
+      <div class="example">
+        <strong>Current Student Example:</strong><br>
+        <em>Bachelor of Business Administration</em><br>
+        KNUST, Kumasi — <strong>Expected Graduation: 2026</strong><br>
+        - Coursework: Marketing Strategy, Financial Analysis, Business Ethics
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <h3>Lesson Quiz – Education Background</h3>
+      <form id="quizForm">
+        <div class="question">
+          <p><strong>1.</strong> What should be listed first in the Education section?</p>
+          <label><input type="radio" name="q1" value="a"> Your oldest education</label>
+          <label><input type="radio" name="q1" value="b"> Your most recent education</label>
+          <label><input type="radio" name="q1" value="c"> Only your high school</label>
+        </div>
+
+        <div class="question">
+          <p><strong>2.</strong> When should you put Education above Work Experience?</p>
+          <label><input type="radio" name="q2" value="a"> When you have little or no work experience</label>
+          <label><input type="radio" name="q2" value="b"> When you’re overqualified</label>
+          <label><input type="radio" name="q2" value="c"> Always, no matter your experience</label>
+        </div>
+
+        <div class="question">
+          <p><strong>3.</strong> True or False: You should include irrelevant coursework to fill space.</p>
+          <label><input type="radio" name="q3" value="a"> True</label>
+          <label><input type="radio" name="q3" value="b"> False</label>
+        </div>
+
+        <div class="question">
+          <p><strong>4.</strong> What detail helps employers know you’re still in school?</p>
+          <label><input type="radio" name="q4" value="a"> “Expected Graduation Date”</label>
+          <label><input type="radio" name="q4" value="b"> “Currently in Class”</label>
+          <label><input type="radio" name="q4" value="c"> “Still Studying”</label>
+        </div>
+
+        <div class="question">
+          <p><strong>5.</strong> What should you include if your education relates directly to the job?</p>
+          <label><input type="radio" name="q5" value="a"> Relevant coursework or academic projects</label>
+          <label><input type="radio" name="q5" value="b"> Only your GPA</label>
+          <label><input type="radio" name="q5" value="c"> The name of your friends</label>
+        </div>
+
+        <button type="button" class="btn submit-btn" id="submitQuiz">Submit Quiz</button>
+        <button type="button" class="btn next-btn" id="nextLessonBtn" disabled>Next Lesson →</button>
+      </form>
+      <p id="resultMessage" style="margin-top:1rem;font-weight:600;"></p>
+    </section>
+
+    <div style="margin-top:2rem;">
+      <a href="lesson3.html" class="btn back-btn">← Previous Lesson</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Resume Mastery | All Rights Reserved
+  </footer>
+
+  <script>
+    if (!localStorage.getItem('lesson3Passed')) {
+      alert("You must complete Lesson 3 before accessing Lesson 4.");
+      window.location.href = "lesson3.html";
+    }
+
+    const quizForm = document.getElementById('quizForm');
+    const submitQuiz = document.getElementById('submitQuiz');
+    const nextLessonBtn = document.getElementById('nextLessonBtn');
+    const resultMessage = document.getElementById('resultMessage');
+
+    const correctAnswers = {
+      q1: 'b',
+      q2: 'a',
+      q3: 'b',
+      q4: 'a',
+      q5: 'a'
+    };
+
+    submitQuiz.addEventListener('click', () => {
+      const formData = new FormData(quizForm);
+      let score = 0;
+      for (let [q, ans] of Object.entries(correctAnswers)) {
+        if (formData.get(q) === ans) score++;
+      }
+
+      const percent = (score / Object.keys(correctAnswers).length) * 100;
+      if (percent >= 70) {
+        resultMessage.style.color = 'green';
+        resultMessage.textContent = `✅ Excellent! You scored ${percent}%. You may proceed to the next lesson.`;
+        nextLessonBtn.disabled = false;
+        localStorage.setItem('lesson4Passed', 'true');
+      } else {
+        resultMessage.style.color = 'red';
+        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to move on. Try again!`;
+      }
+    });
+
+    nextLessonBtn.addEventListener('click', () => {
+      window.location.href = 'lesson5.html';
+    });
+  </script>
+</body>
+</html>
+

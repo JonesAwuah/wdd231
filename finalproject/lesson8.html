@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 8 – Final Assessment | Resume Mastery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #0c4b78;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    header h1 { margin-bottom: 0.5rem; }
+    main {
+      max-width: 900px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: #007bff; margin-bottom: 0.5rem; }
+    p, ul { line-height: 1.6; }
+    .progress-container {
+      background: #e9ecef;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 15px;
+      margin-bottom: 1.5rem;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: #007bff;
+      transition: width 0.4s ease;
+    }
+    .quiz-section {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f9fafb;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    .question { margin: 1rem 0; }
+    label { display: block; margin: 0.4rem 0; cursor: pointer; }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover { transform: scale(1.05); }
+    .submit-btn { background-color: #007bff; color: #fff; }
+    .next-btn {
+      background-color: #28a745;
+      color: #fff;
+      margin-left: 10px;
+    }
+    .next-btn:disabled { background-color: #aaa; cursor: not-allowed; }
+    .back-btn { background-color: #6c757d; color: #fff; margin-right: 10px; }
+    footer { text-align: center; padding: 1rem; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lesson 8: Final Assessment</h1>
+    <p>Test your understanding across all lessons and earn your certificate!</p>
+  </header>
+
+  <main>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <p><strong>Progress:</strong> Lesson 8 of 8 (100%)</p>
+
+    <section class="quiz-section">
+      <h3>Final Course Quiz</h3>
+      <form id="quizForm">
+
+        <div class="question">
+          <p><strong>1.</strong> What is the main goal of a resume summary? (Lesson 1)</p>
+          <label><input type="radio" name="q1" value="a"> To tell jokes about yourself</label>
+          <label><input type="radio" name="q1" value="b"> To give a quick overview of your key skills and achievements</label>
+          <label><input type="radio" name="q1" value="c"> To list your hobbies</label>
+        </div>
+
+        <div class="question">
+          <p><strong>2.</strong> Why are keywords important in resumes? (Lesson 2)</p>
+          <label><input type="radio" name="q2" value="a"> They help Applicant Tracking Systems identify relevant candidates</label>
+          <label><input type="radio" name="q2" value="b"> They make your resume longer</label>
+          <label><input type="radio" name="q2" value="c"> They make it colorful</label>
+        </div>
+
+        <div class="question">
+          <p><strong>3.</strong> How should you describe your work experience? (Lesson 3)</p>
+          <label><input type="radio" name="q3" value="a"> Use action verbs and measurable results</label>
+          <label><input type="radio" name="q3" value="b"> Write in long paragraphs</label>
+          <label><input type="radio" name="q3" value="c"> Use only job titles</label>
+        </div>
+
+        <div class="question">
+          <p><strong>4.</strong> What’s the best way to present your education section? (Lesson 4)</p>
+          <label><input type="radio" name="q4" value="a"> Include institution, degree, and graduation date</label>
+          <label><input type="radio" name="q4" value="b"> Just say “I went to school”</label>
+          <label><input type="radio" name="q4" value="c"> Skip it completely</label>
+        </div>
+
+        <div class="question">
+          <p><strong>5.</strong> Why include achievements and awards? (Lesson 5)</p>
+          <label><input type="radio" name="q5" value="a"> They show proven excellence and recognition</label>
+          <label><input type="radio" name="q5" value="b"> To fill space</label>
+          <label><input type="radio" name="q5" value="c"> They are optional decorations</label>
+        </div>
+
+        <div class="question">
+          <p><strong>6.</strong> What’s the importance of a professional layout? (Lesson 6)</p>
+          <label><input type="radio" name="q6" value="a"> It improves readability and first impressions</label>
+          <label><input type="radio" name="q6" value="b"> It makes the file bigger</label>
+          <label><input type="radio" name="q6" value="c"> It adds unnecessary colors</label>
+        </div>
+
+        <div class="question">
+          <p><strong>7.</strong> What is the best file format to submit your resume? (Lesson 7)</p>
+          <label><input type="radio" name="q7" value="a"> PDF</label>
+          <label><input type="radio" name="q7" value="b"> TXT</label>
+          <label><input type="radio" name="q7" value="c"> JPG</label>
+        </div>
+
+        <button type="button" class="btn submit-btn" id="submitQuiz">Submit Quiz</button>
+        <button type="button" class="btn next-btn" id="viewCertificateBtn" disabled>🎓 View Certificate</button>
+      </form>
+      <p id="resultMessage" style="margin-top:1rem;font-weight:600;"></p>
+    </section>
+
+    <div style="margin-top:2rem;">
+      <a href="lesson7.html" class="btn back-btn">← Previous Lesson</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Resume Mastery | All Rights Reserved</footer>
+
+  <script>
+    // Protect lesson access
+    if (!localStorage.getItem('lesson7Passed')) {
+      alert("You must complete Lesson 7 before accessing Lesson 8.");
+      window.location.href = "lesson7.html";
+    }
+
+    const correctAnswers = {
+      q1: 'b', q2: 'a', q3: 'a',
+      q4: 'a', q5: 'a', q6: 'a', q7: 'a'
+    };
+
+    const submitBtn = document.getElementById('submitQuiz');
+    const viewCertBtn = document.getElementById('viewCertificateBtn');
+    const resultMessage = document.getElementById('resultMessage');
+
+    submitBtn.addEventListener('click', () => {
+      const form = document.getElementById('quizForm');
+      const data = new FormData(form);
+      let score = 0;
+
+      for (let [q, ans] of Object.entries(correctAnswers)) {
+        if (data.get(q) === ans) score++;
+      }
+
+      const percent = (score / Object.keys(correctAnswers).length) * 100;
+
+      if (percent >= 70) {
+        resultMessage.textContent = `✅ Congratulations! You scored ${percent}%.`;
+        resultMessage.style.color = 'green';
+        viewCertBtn.disabled = false;
+        localStorage.setItem('lesson8Passed', 'true');
+      } else {
+        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to unlock the certificate.`;
+        resultMessage.style.color = 'red';
+        viewCertBtn.disabled = true;
+      }
+    });
+
+    viewCertBtn.addEventListener('click', () => {
+      const name = prompt("🎓 Please enter your Full Name for the certificate:");
+      if (name && name.trim() !== "") {
+        localStorage.setItem('userName', name.trim());
+        window.location.href = "certificate.html";
+      } else {
+        alert("You must enter your full name to continue.");
+      }
+    });
+  </script>
+</body>
+</html>

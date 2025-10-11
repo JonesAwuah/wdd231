@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Templates | Job Seekers</title>
+  <meta name="description" content="Learn how to create a professional resume and access tools to build yours effectively." />
+  <meta name="author" content="Job Seekers" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/resources.css">
+
+  <style>
+    :root {
+      --deep-blue: #0c4b78;
+      --accent: #00a5cf;
+      --light: #f8f9fa;
+      --white: #ffffff;
+      --radius: 10px;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--light);
+      margin: 0;
+      color: #333;
+    }
+
+
+    /* Template Grid */
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .template-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .template-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    
+
+    .template-thumb {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+
+    .template-body {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .template-body h3 {
+      color: var(--deep-blue);
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    .template-body p {
+      font-size: 0.95rem;
+      color: #666;
+      min-height: 48px;
+      margin-bottom: 1.2rem;
+    }
+    .template-body a {
+      display: inline-block;
+      background: var(--deep-blue);
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: var(--radius);
+      transition: background 0.3s;
+    }
+    .template-body a:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--white);
+      color: #555;
+      box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Job Seekers logo" class="logo">
+        <span class="site-name">Job Seekers</span>
+      </div>
+      <button id="menuToggle" class="hamburger">☰</button>
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="top-actions">
+        <a href="contact.html" class="btn small">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-header">
+    <h1>Professional Resume Templates</h1>
+    <p>Choose from a range of modern, professional, and creative designs to build your perfect resume.</p>
+  </section>
+
+
+  <main class="template-grid">
+  <!-- Template 1 -->
+  <div class="template-card">
+    <img src="images/template-1.webp" alt="ATS Stylish Accounting Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>ATS Stylish Accounting Resume</h3>
+      <p>A sleek, recruiter-friendly design optimized for Applicant Tracking Systems. Ideal for finance and accounting professionals.</p>
+      <a href="downloads/ATS stylish accounting resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 2 -->
+  <div class="template-card">
+    <img src="images/template-2.webp" alt="Chronological Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>Chronological Resume</h3>
+      <p>A timeless layout focusing on your professional growth and work history in clear, chronological order.</p>
+      <a href="downloads/Resume chronological.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 3 -->
+  <div class="template-card">
+    <img src="images/template-3.webp" alt="Industry Manager Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>Industry Manager Resume</h3>
+      <p>Best for leaders and managers. Displays achievements and leadership experience with confidence.</p>
+      <a href="downloads/Industry manager resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 4 -->
+  <div class="template-card">
+    <img src="images/template-4.webp" alt="Modern Accounting Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>Modern Accounting Resume</h3>
+      <p>A modern, clean resume layout designed for accountants and business professionals.</p>
+      <a href="downloads/Modern accounting resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 5 -->
+  <div class="template-card">
+    <img src="images/template-5.webp" alt="UI/UX Designer Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>Simple UI/UX Designer Resume</h3>
+      <p>A minimalist and creative resume template for designers and digital creators.</p>
+      <a href="downloads/Simple UIUX designer resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 6 -->
+  <div class="template-card">
+    <img src="images/template-6.webp" alt="ATS Bold Classic Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>ATS Bold Classic Resume</h3>
+      <p>A bold yet traditional format perfect for professionals who want a confident first impression.</p>
+      <a href="downloads/ATS bold classic resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 7 -->
+  <div class="template-card">
+    <img src="images/template-7.webp" alt="Attorney Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>Attorney Resume</h3>
+      <p>Designed for legal professionals — clean, structured, and polished for credibility and impact.</p>
+      <a href="downloads/Attorney resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 8 -->
+  <div class="template-card">
+    <img src="images/template-8.webp" alt="General Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>General Resume</h3>
+      <p>A balanced layout for all industries — simple, professional, and easy to customize.</p>
+      <a href="downloads/Resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+  <!-- Template 9 -->
+  <div class="template-card">
+    <img src="images/template-9.webp" alt="ATS Classic HR Resume Preview" class="template-thumb">
+    <div class="template-body">
+      <h3>ATS Classic HR Resume</h3>
+      <p>Streamlined for HR professionals, emphasizing key skills, experience, and ATS readability.</p>
+      <a href="downloads/ATS classic HR resume.docx" class="btn-link">Use This Template</a>
+    </div>
+  </div>
+
+ 
+</main>
+
+<!-- Contact CTA -->
+  <section class="contact-cta">
+    <h2>Need Help With Your Resume?</h2>
+    <p>Our experts can review your resume and provide personalized feedback to increase your chances of success.</p>
+    <a href="contact.html" class="btn">Get Expert Help</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
+        <p>
+          At <strong>Job Seekers</strong>, our mission is to provide resources, guidance, 
+          and real opportunities to help individuals find meaningful employment.  
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resume.html">Resume Tools</a></li>
+          <li><a href="#">Cover Letter Tips</a></li>
+          <li><a href="#">Interview Prep</a></li>
+          <li><a href="#">Job Strategies</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">🌐 Website</a></li>
+          <li><a href="mailto:info@jobseekers.com">📧 Email</a></li>
+          <li><a href="#">📱 WhatsApp</a></li>
+          <li><a href="#">📞 Telephone</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <footer>
+    &copy; <span id="year"></span> Job Seekers. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume Builder — Modern Accounting Template | Job Seekers</title>
+  <meta name="description" content="Learn how to create a professional resume and access tools to build yours effectively." />
+  <meta name="author" content="Job Seekers" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/resources.css">
+
+  <style>
+    :root{
+      --deep-blue: #0c4b78;
+      --muted: #666;
+      --accent: #00a5cf;
+      --page-bg: #f6f7f9;
+      --paper: #ffffff;
+      --radius: 8px;
+      --max-width: 1100px;
+    }
+
+    /* Global layout */
+    body{
+      margin:0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: var(--page-bg);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    
+
+    /* Main builder area */
+    .container{
+      max-width: var(--max-width);
+      margin: 2.5rem auto 3rem;
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 1.8rem;
+      padding: 0 1rem;
+      align-items:start;
+    }
+
+    /* Left Form Card */
+    .form-card{
+      background: var(--paper);
+      padding: 1.25rem;
+      border-radius: var(--radius);
+      box-shadow: 0 6px 18px rgba(10,20,30,0.06);
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .form-card h2{
+      margin:0 0 0.8rem 0;
+      color: var(--deep-blue);
+      font-size: 1.2rem;
+    }
+
+    label{ display:block; margin-top:0.6rem; font-weight:600; font-size:0.9rem; color:#222; }
+    input, textarea{
+      width:100%;
+      padding:0.55rem 0.6rem;
+      margin-top:0.28rem;
+      border-radius:6px;
+      border:1px solid #d3d7dc;
+      font-size:0.95rem;
+      box-sizing:border-box;
+    }
+    textarea{ min-height:90px; resize:vertical; }
+
+    .btn-row{ margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap; }
+    button{
+      background:var(--deep-blue);
+      color:#fff;
+      border:none;
+      padding:0.6rem 1rem;
+      border-radius:6px;
+      cursor:pointer;
+      font-weight:600;
+      transition:background 0.3s ease;
+    }
+    button:hover{ background:var(--accent); }
+    button.secondary{
+      background:#fff;
+      color:var(--deep-blue);
+      border:1px solid rgba(12,75,120,0.2);
+    }
+
+    /* Resume Paper Preview */
+    .paper{
+      background: var(--paper);
+      padding: 1.4rem 1.6rem;
+      border-radius: 6px;
+      box-shadow: 0 6px 18px rgba(10,20,30,0.06);
+      border: 1px solid rgba(0,0,0,0.04);
+      min-height: 600px;
+    }
+
+    .resume-header{
+      text-align:center;
+      padding-bottom:6px;
+      margin-bottom:8px;
+      border-bottom:1px solid #e6e9ec;
+    }
+    .resume-name{
+      font-size:26px;
+      font-weight:700;
+      color:#0b466b;
+      margin:0;
+      line-height:1;
+      font-family:"Georgia","Times New Roman",serif;
+    }
+    .resume-contact{
+      margin-top:6px;
+      font-size:0.92rem;
+      color:var(--muted);
+    }
+
+    .summary{
+      margin-top:14px;
+      font-size:0.98rem;
+      color:#222;
+    }
+
+    .section{ margin-top:14px; }
+    .section h3{
+      margin:0;
+      font-size:13px;
+      color:var(--deep-blue);
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+
+    .job{ margin-top:8px; padding-left:6px; }
+    .job-title{ font-weight:700; font-size:0.98rem; color:#111; margin:0; }
+    .job-meta{ font-size:0.9rem; color:var(--muted); margin:3px 0 6px 0; }
+    .job-desc{ margin:0; font-size:0.95rem; color:#222; line-height:1.5; }
+    .job-desc ul{ margin:6px 0 0 1.1rem; }
+
+    .two-col{ display:flex; gap:1rem; }
+    .left-col{ width:65%; }
+    .right-col{ width:35%; }
+
+    .skills-list{
+      margin-top:6px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.45rem;
+    }
+    .skill-pill{
+      border-radius:14px;
+      padding:0.3rem 0.6rem;
+      font-size:0.86rem;
+      background:#f1f6f9;
+      border:1px solid #e1e7eb;
+      color:#0b466b;
+    }
+    
+ footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--white);
+      color: #555;
+      box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
+    }
+    /* Print styles */
+    @media print {
+      header, .topbar, .form-card, .page-header, footer { display:none !important; }
+      body { background:#fff; padding:0; margin:0; }
+      .paper { box-shadow:none; border:none; margin:0; padding:1in; width:100%; border-radius:0; }
+      .section{ break-inside:avoid; }
+      .resume-name{ font-size:28px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Job Seekers logo" class="logo">
+        <span class="site-name">Job Seekers</span>
+      </div>
+      <button id="menuToggle" class="hamburger">☰</button>
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="top-actions">
+        <a href="contact.html" class="btn small">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-header">
+    <h1>Resume Builder</h1>
+    <p>Build a modern, professional resume effortlessly — preview it instantly and download it as a polished PDF.</p>
+  </section>
+
+  <!-- MAIN BUILDER -->
+  <div class="container">
+    <!-- Left Form -->
+    <div class="form-card">
+      <h2>Enter Your Details</h2>
+      <form id="resumeForm" onsubmit="return false;">
+        <label>Full Name</label>
+        <input id="name" value="Liane Cormier">
+
+        <label>Location / Website</label>
+        <input id="location" value="Detroit, MI | www.greatsiteaddress.com">
+
+        <label>Phone</label>
+        <input id="phone" value="313.555.0100">
+
+        <label>Email</label>
+        <input id="email" value="liane@example.com">
+
+        <label>Professional Summary</label>
+        <textarea id="summary">Analytical, organized and detail-oriented accountant with GAAP expertise and experience in the full spectrum of public accounting.</textarea>
+
+        <label>Work Experience</label>
+        <textarea id="experience">Accountant
+Trey Research | San Francisco, CA
+20XX – Present
+Provide accounting services including tax preparation, auditing, budgeting, and financial reporting.</textarea>
+
+        <label>Education</label>
+        <textarea id="education">Bachelor of Science in Accounting, Minor in Business Administration
+Bellows College
+June 20XX
+GPA 3.8</textarea>
+
+        <label>Skills</label>
+        <input id="skills" value="Microsoft NAV Dynamics, Cashflow planning, Tax codes, Communication">
+
+        <div class="btn-row">
+          <button type="button" onclick="generateResume()">Generate Resume</button>
+          <button type="button" class="secondary" onclick="printResume()">Print / Save PDF</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Resume Preview -->
+    <div class="paper" id="resumePreview">
+      <!-- generated content -->
+    </div>
+  </div>
+
+  <!-- Contact CTA -->
+  <section class="contact-cta">
+    <h2>Need Help With Your Resume?</h2>
+    <p>Our experts can review your resume and provide personalized feedback to increase your chances of success.</p>
+    <a href="contact.html" class="btn">Get Expert Help</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
+        <p>
+          At <strong>Job Seekers</strong>, our mission is to provide resources, guidance, 
+          and real opportunities to help individuals find meaningful employment.  
+        </p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resume.html">Resume Tools</a></li>
+          <li><a href="#">Cover Letter Tips</a></li>
+          <li><a href="#">Interview Prep</a></li>
+          <li><a href="#">Job Strategies</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">🌐 Website</a></li>
+          <li><a href="mailto:info@jobseekers.com">📧 Email</a></li>
+          <li><a href="#">📱 WhatsApp</a></li>
+          <li><a href="#">📞 Telephone</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <footer>
+    &copy; <span id="year"></span> Job Seekers. All rights reserved.
+  </footer>
+
+  <script>
+    function escapeHtml(str){return str.replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+
+    function generateResume(){
+      const name=document.getElementById('name').value.trim();
+      const location=document.getElementById('location').value.trim();
+      const phone=document.getElementById('phone').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const summary=document.getElementById('summary').value.trim();
+      const experience=document.getElementById('experience').value.trim();
+      const education=document.getElementById('education').value.trim();
+      const skills=document.getElementById('skills').value.split(/[,;\n]+/).map(s=>s.trim()).filter(Boolean);
+
+      const contact=[location, phone, email].filter(Boolean).join(' · ');
+
+      const expHtml=experience.split(/\n{2,}/).map(block=>{
+        const lines=block.split(/\n/).map(l=>l.trim());
+        return `<div class="job"><p class="job-title">${escapeHtml(lines[0]||'')}</p><div class="job-meta">${escapeHtml(lines[1]||'')}</div><p class="job-desc">${escapeHtml(lines.slice(2).join(' '))}</p></div>`;
+      }).join('');
+
+      const eduHtml=education.split(/\n{2,}/).map(block=>{
+        const lines=block.split(/\n/).map(l=>l.trim());
+        return `<div class="job"><p class="job-title">${escapeHtml(lines[0]||'')}</p><div class="job-meta">${escapeHtml(lines.slice(1).join(' · '))}</div></div>`;
+      }).join('');
+
+      const skillsHtml=skills.map(s=>`<div class="skill-pill">${escapeHtml(s)}</div>`).join('');
+
+      document.getElementById('resumePreview').innerHTML=`
+        <div class="resume-header">
+          <h1 class="resume-name">${escapeHtml(name)}</h1>
+          <div class="resume-contact">${escapeHtml(contact)}</div>
+        </div>
+        <div class="summary section"><p>${escapeHtml(summary)}</p></div>
+        <div class="section"><h3>Experience</h3>${expHtml}</div>
+        <div class="two-col section">
+          <div class="left-col"><h3>Education</h3>${eduHtml}</div>
+          <div class="right-col"><h3>Skills</h3><div class="skills-list">${skillsHtml}</div></div>
+        </div>
+        <div class="paper-footer">Job Seekers • Resume generated in browser</div>`;
+    }
+
+    function printResume(){generateResume(); window.print();}
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded',generateResume);
+  </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Job Seekers | Home</title>
+  <meta name="description" content="Job Seekers - Find jobs, improve your applications, and land the role you want." />
+  <meta name="author" content="Job Seekers" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header class="topbar">
+  <div class="topbar-inner">
+    <!-- Logo & Brand -->
+    <div class="brand">
+      <img src="images/logo.jpg" alt="Job Seekers logo" class="logo" loading="lazy">
+      <span class="site-name">Job Seekers</span>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <button id="menuToggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="resources.html">Resources</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Action Button -->
+    <div class="top-actions">
+      <a href="join.html" class="btn small">Join Now</a>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1>Your Career Partner</h1>
+        <p class="lead">Explore curated job listings, build strong applications, and prepare for interviews with confidence.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="jobs.html">Browse Jobs</a>
+          <a class="btn outline" href="resources.html">Get Resources</a>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <!-- pill / oval container -->
+        <div class="portrait-pill">
+          <img src="images/hero-person.webp" alt="Professional person" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- About Us Section -->
+<section class="about-us">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="images/about.jpg" alt="Team working together" loading="lazy">
+    </div>
+    <div class="about-text">
+      <h2>About Job Seekers</h2>
+      <p>
+        Job Seekers is a platform dedicated to helping individuals access opportunities 
+        and build strong applications. Whether you’re just starting your career or 
+        looking to take the next step, we provide resources to guide you in creating 
+        powerful resumes, writing compelling cover letters, and preparing for interviews.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Mission Section -->
+<section class="mission-vision">
+  <h2>Our Mission & Values</h2>
+  <div class="mission-cards">
+    <div class="card">
+      <h3>Our Purpose</h3>
+      <p class="summary">
+        To create equal opportunities for job seekers by providing access 
+        to the knowledge and tools needed to succeed.
+      </p>
+      <button class="read-more" data-target="purpose">Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p class="summary">
+        To empower individuals with guidance and resources that boost 
+        their confidence in job applications.
+      </p>
+      <button class="read-more" data-target="mission">Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p class="summary">
+        To build a global community where everyone can access meaningful 
+        employment opportunities.
+      </p>
+      <button class="read-more" data-target="vision">Read More</button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Detailed Info -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- WHAT WE DO -->
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">What we do</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="icon-circle">💼</div>
+          <h3>Job Listings</h3>
+          <p>Curated, up-to-date job openings across industries to help you find the right fit.</p>
+          <a class="btn small btn-card" href="jobs.html">Read More</a>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">📝</div>
+          <h3>Resume Tools</h3>
+          <p>Templates and tips to craft resumes that get noticed by hiring managers.</p>
+          <a class="btn small btn-card" href="resume.html">Read More</a>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">🎤</div>
+          <h3>Interview Coaching</h3>
+          <p>Practice questions, techniques, and confidence-building guidance.</p>
+          <a class="btn small btn-card" href="interview-coaching.html">Read More</a>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">📚</div>
+          <h3>Career Guides</h3>
+          <p>Guides on career paths, upskilling and long-term planning.</p>
+          <a class="btn small btn-card" href="career-guides.html">Read More</a>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">🌐</div>
+          <h3>Networking</h3>
+          <p>Connect with mentors, recruiters and peers to grow your professional network.</p>
+          <a class="btn small btn-card" href="networking.html">Read More</a>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">📊</div>
+          <h3>Application Tips</h3>
+          <p>Step-by-step advice for applying online and following up effectively.</p>
+          <a class="btn small btn-card" href="application-tips.html">Read More</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight row (blue band) -->
+  <section class="highlight">
+    <div class="highlight-inner">
+      <div class="highlight-image">
+        <img src="images/highlight.webp" alt="Interview preparation" loading="lazy">
+      </div>
+      <div class="highlight-text">
+        <h2>Taste the Job Seekers difference</h2>
+        <p>We combine curated vacancies with practical, hands-on resources so you can apply confidently and stand out.</p>
+        <a class="btn primary" href="jobs.html">See Jobs</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Stats Section -->
+<section class="stats">
+  <div class="stats-container">
+    <div class="stat">
+      <h2>500+</h2>
+      <p>Job Opportunities Shared</p>
+    </div>
+    <div class="stat">
+      <h2>300+</h2>
+      <p>Successful Applicants</p>
+    </div>
+    <div class="stat">
+      <h2>20+</h2>
+      <p>Partner Companies</p>
+    </div>
+    <div class="stat">
+      <h2>5+</h2>
+      <p>Years Supporting Job Seekers</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Call-to-Action -->
+<section class="contact-cta">
+  <h2>Reach out to us</h2>
+  <p>
+    Do you have questions about applying for jobs, preparing a resume, or<br>
+    improving your chances of success? We’d love to hear from you.
+  </p>
+  <a href="contact.html" class="btn">Get In Touch</a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
+      <p>
+        At <strong>Job Seekers</strong>, our mission is to provide resources, guidance, 
+        and real opportunities to help individuals find meaningful employment.  
+        We connect motivated applicants with trusted employers.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="resume.html">Resume Writing</a></li>
+        <li><a href="application-tips.html">Cover Letter Tips</a></li>
+        <li><a href="interview-coaching.html">Interview Preparation</a></li>
+        <li><a href="jobs.html">Job Search Strategies</a></li>
+        <li><a href="career-guides.html">Career Development</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">🌐 Website</a></li>
+        <li><a href="mailto:info@jobseekers.com">📧 Email</a></li>
+        <li><a href="#">📱 WhatsApp</a></li>
+        <li><a href="#">📞 Telephone</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Job Seekers</p>
+    </div>
+  </footer>
+
+
+  <script src="scripts/index.js"></script>
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+  </script>
+</body>
+</html>

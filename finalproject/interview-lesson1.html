@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 1 – Understanding the Interview Process | Interview Coaching</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #0c4b78;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    .progress-container {
+      background: #e9ecef;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 15px;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-bar {
+      width: 20%; /* 1 of 5 lessons */
+      height: 100%;
+      background: #007bff;
+      transition: width 0.4s ease;
+    }
+
+    .quiz-section {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f9fafb;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .quiz-section h3 {
+      color: #007bff;
+    }
+
+    .question {
+      margin: 1rem 0;
+    }
+
+    label {
+      display: block;
+      margin: 0.4rem 0;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .next-btn {
+      background-color: #28a745;
+      color: #fff;
+      margin-left: 10px;
+    }
+
+    .next-btn:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+    .back-btn {
+      background-color: #6c757d;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+    }
+
+    .example {
+      background: #f2f8ff;
+      padding: 1rem;
+      border-left: 4px solid #00a8e8;
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lesson 1: Understanding the Interview Process</h1>
+    <p>Learn what interviewers look for and how to prepare effectively for each stage.</p>
+  </header>
+
+  <main>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <p><strong>Progress:</strong> Lesson 1 of 5 (20%)</p>
+
+    <section class="lesson-content">
+      <h2>🎥 Watch the Training Video</h2>
+      <video controls>
+        <source src="videos/interview-process.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Lesson Summary:</h3>
+      <ul>
+        <li>Understand the stages of a typical interview — screening, technical, and behavioral.</li>
+        <li>Learn what employers assess: skills, confidence, attitude, and cultural fit.</li>
+        <li>Discover how to prepare mentally and physically before every interview.</li>
+        <li>Master the art of creating a strong first impression.</li>
+      </ul>
+
+      <div class="example">
+        <strong>Example:</strong><br>
+        In one study, 33% of interviewers said they decide on a candidate within the first 90 seconds.  
+        A confident greeting, smile, and posture can make or break your first impression.
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <h3>Lesson Quiz – Understanding the Interview Process</h3>
+      <form id="quizForm">
+        <div class="question">
+          <p><strong>1.</strong> What are employers primarily evaluating during interviews?</p>
+          <label><input type="radio" name="q1" value="a"> Your hobbies and personal life</label>
+          <label><input type="radio" name="q1" value="b"> Your skills, confidence, and attitude</label>
+          <label><input type="radio" name="q1" value="c"> The color of your outfit</label>
+        </div>
+
+        <div class="question">
+          <p><strong>2.</strong> How quickly can interviewers often form an impression of you?</p>
+          <label><input type="radio" name="q2" value="a"> Within the first 90 seconds</label>
+          <label><input type="radio" name="q2" value="b"> After the entire interview</label>
+          <label><input type="radio" name="q2" value="c"> Only after checking your references</label>
+        </div>
+
+        <div class="question">
+          <p><strong>3.</strong> What’s the best way to prepare before an interview?</p>
+          <label><input type="radio" name="q3" value="a"> Skip preparation and rely on confidence</label>
+          <label><input type="radio" name="q3" value="b"> Review the company, job role, and practice answers</label>
+          <label><input type="radio" name="q3" value="c"> Memorize a script word-for-word</label>
+        </div>
+
+        <button type="button" class="btn submit-btn" id="submitQuiz">Submit Quiz</button>
+        <button type="button" class="btn next-btn" id="nextLessonBtn" disabled>Next Lesson →</button>
+      </form>
+      <p id="resultMessage" style="margin-top:1rem;font-weight:600;"></p>
+    </section>
+
+    <div style="margin-top:2rem;">
+      <a href="interview-coaching.html" class="btn back-btn">← Back to Coaching</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Job Seekers | Interview Coaching Program
+  </footer>
+
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const submitQuiz = document.getElementById('submitQuiz');
+    const nextLessonBtn = document.getElementById('nextLessonBtn');
+    const resultMessage = document.getElementById('resultMessage');
+
+    const correctAnswers = {
+      q1: 'b',
+      q2: 'a',
+      q3: 'b'
+    };
+
+    submitQuiz.addEventListener('click', () => {
+      const formData = new FormData(quizForm);
+      let score = 0;
+      for (let [q, ans] of Object.entries(correctAnswers)) {
+        if (formData.get(q) === ans) score++;
+      }
+
+      const percent = (score / Object.keys(correctAnswers).length) * 100;
+      if (percent >= 70) {
+        resultMessage.style.color = 'green';
+        resultMessage.textContent = `✅ Excellent! You scored ${percent}%. You may proceed to the next lesson.`;
+        nextLessonBtn.disabled = false;
+        localStorage.setItem('lesson1Passed', 'true');
+      } else {
+        resultMessage.style.color = 'red';
+        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to move on. Try again!`;
+      }
+    });
+
+    nextLessonBtn.addEventListener('click', () => {
+      window.location.href = 'interview-lesson2.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Practice | Job Seekers</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <style>
+    :root {
+      --deep-blue: #0c4b78;
+      --accent: #00a5cf;
+      --light: #f9f9f9;
+      --white: #fff;
+      --radius: 8px;
+    }
+
+    body {
+      background: var(--light);
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background: #0c4b78;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+    
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+   
+
+    .next-btn {
+      background-color: #28a745;
+      margin-left: 200px;
+    }
+
+    .back-btn {
+      background-color: #6c757d;
+    }
+
+
+    .coaching-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    section {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--deep-blue);
+    }
+
+    ul {
+      margin-left: 1.2rem;
+      line-height: 1.6;
+    }
+
+    button {
+      background: var(--deep-blue);
+      color: var(--white);
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      margin-top: 1rem;
+      margin-right: 0.5rem;
+      transition: background 0.3s, transform 0.2s;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: var(--accent);
+      transform: scale(1.05);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 0.5rem;
+      padding: 0.6rem;
+      border-radius: var(--radius);
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .feedback, .hint-box {
+      margin-top: 1rem;
+      background: #f1f9ff;
+      border-left: 4px solid var(--accent);
+      padding: 0.8rem;
+      border-radius: var(--radius);
+      display: none;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .progress {
+      margin-bottom: 1rem;
+      color: var(--deep-blue);
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media(max-width: 900px) {
+      .coaching-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .page-header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      color: var(--deep-blue);
+    }
+
+    footer{margin-top:22px;text-align:center;padding:18px;color:#666}
+
+    .btn-small {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius);
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-small:hover {
+      background: var(--deep-blue);
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <h1>Interactive Interview Practice</h1>
+    <p>Sharpen your answers and boost your confidence before the real interview.</p>
+  </header>
+
+  
+
+  <!-- MAIN CONTENT -->
+  <div class="coaching-container">
+    <!-- Coaching Tips -->
+    <section>
+      <h2>Interview Tips</h2>
+      <ul>
+        <li>Research the company and the role you’re applying for.</li>
+        <li>Dress appropriately for the company culture.</li>
+        <li>Maintain good posture and make eye contact.</li>
+        <li>Structure answers using the <strong>STAR</strong> method.</li>
+        <li>Be honest, confident, and concise.</li>
+        <li>Ask thoughtful questions about the company or team.</li>
+        <li>Send a thank-you email afterward.</li>
+      </ul>
+    </section>
+
+    <!-- Practice Section -->
+    <section>
+      <h2>Practice Session</h2>
+      <p id="question">Click below to begin your practice interview.</p>
+      <div class="progress" id="progress">Question 0 of 10</div>
+      <button onclick="getQuestion()">🎯 Get Question</button>
+      <button id="hintBtn" style="display:none;" onclick="showHint()">💡 Hint</button>
+
+      <div id="practiceArea" style="display:none;">
+        <label>Your Answer:</label>
+        <textarea id="answer" placeholder="Type your answer here..."></textarea>
+        <button onclick="showFeedback()">✅ Submit Answer</button>
+        <div class="hint-box" id="hintBox"></div>
+        <div class="feedback" id="feedbackBox"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- RETURN BUTTON -->
+
+    <a href="interview-practice.html" class="btn next-btn">Next: Live Interview →</a>
+        <a href="interview-coaching.html" class="btn back-btn">← Back to Coaching</a>
+    
+    <footer>
+    © 2025 Job Seekers | Interview Coaching Program
+  </footer>
+
+  <script>
+    const questions = [
+      "Tell me about yourself.",
+      "Why do you want to work here?",
+      "What are your greatest strengths?",
+      "What is your biggest weakness?",
+      "Describe a challenge you faced and how you overcame it.",
+      "Where do you see yourself in five years?",
+      "Why should we hire you?",
+      "Tell me about a time you worked in a team.",
+      "How do you handle pressure and deadlines?",
+      "What do you know about our company?"
+    ];
+
+    const feedbackTips = {
+      "yourself": {
+        feedback: "Focus on your background, key skills, and goals related to the role.",
+        hint: "Start with your current role, then move backward briefly."
+      },
+      "work here": {
+        feedback: "Show enthusiasm for the company's mission or culture.",
+        hint: "Mention something specific from their website or news."
+      },
+      "strengths": {
+        feedback: "Pick 2–3 strengths relevant to the job and give examples.",
+        hint: "Think of qualities your colleagues would praise you for."
+      },
+      "weakness": {
+        feedback: "Choose a small weakness and explain how you're improving.",
+        hint: "Avoid cliches like 'perfectionist' — be genuine!"
+      },
+      "challenge": {
+        feedback: "Use the STAR method: Situation, Task, Action, Result.",
+        hint: "Focus on what YOU did to solve the issue."
+      },
+      "five years": {
+        feedback: "Show ambition but align it with the company's goals.",
+        hint: "Mention growing your skills and contributing long-term."
+      },
+      "hire you": {
+        feedback: "Summarize your best strengths that fit the job.",
+        hint: "Be confident — this is your chance to sell yourself!"
+      },
+      "team": {
+        feedback: "Give a teamwork example that shows collaboration.",
+        hint: "Focus on communication and contribution."
+      },
+      "pressure": {
+        feedback: "Share a success story under pressure.",
+        hint: "Mention staying calm and prioritizing tasks."
+      },
+      "company": {
+        feedback: "Mention facts about the company’s mission or values.",
+        hint: "Show genuine interest and preparation."
+      }
+    };
+
+    let currentQuestion = 0;
+
+    function getQuestion() {
+      if (currentQuestion >= questions.length) currentQuestion = 0;
+      const randomQ = questions[currentQuestion];
+      document.getElementById("question").textContent = randomQ;
+      document.getElementById("practiceArea").style.display = "block";
+      document.getElementById("feedbackBox").style.display = "none";
+      document.getElementById("hintBox").style.display = "none";
+      document.getElementById("answer").value = "";
+      document.getElementById("hintBtn").style.display = "inline-block";
+      document.getElementById("progress").textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+      currentQuestion++;
+    }
+
+    function showHint() {
+      const q = document.getElementById("question").textContent.toLowerCase();
+      let hintText = "Think about your best possible answer.";
+      for (let key in feedbackTips) {
+        if (q.includes(key)) {
+          hintText = feedbackTips[key].hint;
+          break;
+        }
+      }
+      const hintBox = document.getElementById("hintBox");
+      hintBox.textContent = "💡 Hint: " + hintText;
+      hintBox.style.display = "block";
+    }
+
+    function showFeedback() {
+      const q = document.getElementById("question").textContent.toLowerCase();
+      let feedback = "Nice work! Keep practicing to refine your responses.";
+      for (let key in feedbackTips) {
+        if (q.includes(key)) {
+          feedback = feedbackTips[key].feedback;
+          break;
+        }
+      }
+      const feedbackBox = document.getElementById("feedbackBox");
+      feedbackBox.textContent = "💬 Feedback: " + feedback;
+      feedbackBox.style.display = "block";
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Sales Representative",
+    "company": "Ghana Agro Products Ltd.",
+    "location": "Accra",
+    "function": "Sales",
+    "type": "Full-time",
+    "description": "Promote and sell agricultural products to retailers. Excellent communication and negotiation skills required."
+  },
+  {
+    "id": 2,
+    "title": "Regional Sales Executive",
+    "company": "SmartTrade Ghana",
+    "location": "Kumasi",
+    "function": "Sales",
+    "type": "Full-time",
+    "description": "Expand client base in the Ashanti region through direct sales and business relationship management."
+  },
+  {
+    "id": 3,
+    "title": "Part-time Sales Associate",
+    "company": "Fashion City Ghana",
+    "location": "Takoradi",
+    "function": "Sales",
+    "type": "Part-time",
+    "description": "Assist customers in product selection and handle point-of-sale transactions at retail outlets."
+  },
+  {
+    "id": 4,
+    "title": "Customer Service Officer",
+    "company": "Golden Telecom Ghana",
+    "location": "Kumasi",
+    "function": "Customer Service",
+    "type": "Full-time",
+    "description": "Handle inquiries, complaints, and support calls. Telecom experience preferred."
+  },
+  {
+    "id": 5,
+    "title": "Front Desk Assistant",
+    "company": "Sunset Hotel",
+    "location": "Takoradi",
+    "function": "Customer Service",
+    "type": "Full-time",
+    "description": "Welcome guests, manage bookings, and maintain an excellent front-office experience."
+  },
+  {
+    "id": 6,
+    "title": "Remote Customer Support Agent",
+    "company": "TechAssist Ghana",
+    "location": "Accra",
+    "function": "Customer Service",
+    "type": "Remote",
+    "description": "Provide support to clients online and via phone. Strong communication skills required."
+  },
+  {
+    "id": 7,
+    "title": "IT Support Technician",
+    "company": "TechLink Systems",
+    "location": "Takoradi",
+    "function": "IT",
+    "type": "Full-time",
+    "description": "Install and troubleshoot hardware/software issues. Diploma in IT required."
+  },
+  {
+    "id": 8,
+    "title": "Junior Web Developer",
+    "company": "CodeCraft Ghana",
+    "location": "Accra",
+    "function": "IT",
+    "type": "Internship",
+    "description": "Assist in building websites using HTML, CSS, and JavaScript. Great for beginners."
+  },
+  {
+    "id": 9,
+    "title": "Remote Data Entry Clerk",
+    "company": "AfriData Solutions",
+    "location": "Tamale",
+    "function": "IT",
+    "type": "Remote",
+    "description": "Perform accurate data entry and maintain company databases. Must be detail-oriented."
+  },
+  {
+    "id": 10,
+    "title": "Digital Marketing Executive",
+    "company": "VistaHub Media",
+    "location": "Accra",
+    "function": "Marketing",
+    "type": "Full-time",
+    "description": "Develop online marketing strategies and manage SEO and analytics."
+  },
+  {
+    "id": 11,
+    "title": "Marketing Intern",
+    "company": "BlueSky Advertising",
+    "location": "Accra",
+    "function": "Marketing",
+    "type": "Internship",
+    "description": "Support the team in campaign design, social media management, and content creation."
+  },
+  {
+    "id": 12,
+    "title": "Brand Marketing Officer",
+    "company": "StarLite Foods",
+    "location": "Kumasi",
+    "function": "Marketing",
+    "type": "Full-time",
+    "description": "Coordinate brand awareness and local promotions for product marketing."
+  },
+  {
+    "id": 13,
+    "title": "Remote Graphic Designer",
+    "company": "DesignPro Ghana",
+    "location": "Tamale",
+    "function": "Marketing",
+    "type": "Remote",
+    "description": "Design creative visual materials for digital campaigns. Adobe tools proficiency needed."
+  },
+  {
+    "id": 14,
+    "title": "Call Center Representative",
+    "company": "DialServe Ltd.",
+    "location": "Accra",
+    "function": "Customer Service",
+    "type": "Part-time",
+    "description": "Handle inbound customer calls and record feedback for continuous improvement."
+  },
+  {
+    "id": 15,
+    "title": "Software Support Specialist",
+    "company": "DataServe Ghana",
+    "location": "Tamale",
+    "function": "IT",
+    "type": "Full-time",
+    "description": "Assist clients with software-related problems and document bug reports."
+  },
+  {
+    "id": 16,
+    "title": "Sales Intern",
+    "company": "EcoTech Supplies",
+    "location": "Accra",
+    "function": "Sales",
+    "type": "Internship",
+    "description": "Gain experience by supporting the regional sales team and client outreach programs."
+  },
+  {
+    "id": 17,
+    "title": "Marketing Assistant",
+    "company": "Bright Media Ghana",
+    "location": "Takoradi",
+    "function": "Marketing",
+    "type": "Internship",
+    "description": "Assist the marketing manager in executing campaigns and preparing reports."
+  },
+  {
+    "id": 18,
+    "title": "IT Systems Analyst",
+    "company": "SmartNet Solutions",
+    "location": "Kumasi",
+    "function": "IT",
+    "type": "Full-time",
+    "description": "Analyze business requirements and recommend system improvements."
+  },
+  {
+    "id": 19,
+    "title": "Customer Relationship Specialist",
+    "company": "TrustLine Bank",
+    "location": "Accra",
+    "function": "Customer Service",
+    "type": "Full-time",
+    "description": "Manage client accounts and ensure customer satisfaction through proactive service."
+  },
+  {
+    "id": 20,
+    "title": "Territory Sales Manager",
+    "company": "Prime Distribution Ltd.",
+    "location": "Tamale",
+    "function": "Sales",
+    "type": "Full-time",
+    "description": "Oversee product distribution, maintain client relations, and drive regional sales growth."
+  }
+]

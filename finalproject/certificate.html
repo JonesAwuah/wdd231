@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate of Completion</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    .certificate-container {
+      width: 80%;
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      border: 15px solid #d4af37;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 { font-size: 2.8em; color: #222; margin-bottom: 10px; }
+    h2 { font-size: 1.6em; color: #444; margin-top: 10px; margin-bottom: 30px; }
+    .username {
+      font-size: 2em;
+      font-weight: bold;
+      color: #222;
+      text-decoration: underline;
+    }
+    .details {
+      font-size: 1.1em;
+      margin-top: 20px;
+      color: #333;
+    }
+    .signature {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .signature div {
+      width: 45%;
+      text-align: center;
+    }
+    .signature-line {
+      border-top: 1px solid #000;
+      margin-top: 50px;
+    }
+    .signature-name { font-weight: bold; margin-top: 5px; }
+    button {
+      margin-top: 60px;
+      background: #d4af37;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover { background: #b89328; }
+    @media print {
+      button { display: none; }
+      body { background: white; }
+      .certificate-container { box-shadow: none; border: 10px solid #d4af37; }
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate-container">
+    <h1>Certificate of Completion</h1>
+    <h2>This is to proudly certify that</h2>
+    <div class="username" id="userName">[Your Name]</div>
+    <div class="details">
+      has successfully completed the <strong>Resume Mastery Course</strong><br>
+      demonstrating commitment to professional growth and resume excellence.
+    </div>
+    <div class="details" id="dateField"></div>
+
+    <div class="signature">
+      <div>
+        <div class="signature-line"></div>
+        <div class="signature-name">AJ Consult Career Academy</div>
+      </div>
+      <div>
+        <div class="signature-line"></div>
+        <div class="signature-name">Participant Signature</div>
+      </div>
+    </div>
+
+    <button onclick="window.print()">🖨️ Print / Download Certificate</button>
+  </div>
+
+  <script>
+    const userName = localStorage.getItem('userName');
+    if (!userName) {
+      alert("Please return to Lesson 8 and enter your name before viewing the certificate.");
+      window.location.href = "lesson8.html";
+    } else {
+      document.getElementById('userName').textContent = userName;
+    }
+
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById('dateField').innerHTML = `<br><em>Date of Completion:</em> ${formattedDate}`;
+  </script>
+</body>
+</html>
