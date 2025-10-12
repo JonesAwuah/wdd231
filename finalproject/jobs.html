@@ -3,64 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Job Seekers | Home</title>
-  <meta name="description" content="Job Seekers - Find jobs, improve your applications, and land the role you want." />
+  <title>Job Seekers | Jobs</title>
+  <meta name="description" content="Find top job opportunities in Ghana through Job Seekers." />
   <meta name="author" content="Job Seekers" />
   <link rel="icon" href="images/favicon.png" type="image/png">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/jobs.css">
-
 </head>
+
 <body>
+  <!-- HEADER -->
   <header class="topbar">
-  <div class="topbar-inner">
-    <!-- Logo & Brand -->
-    <div class="brand">
-      <img src="images/logo.jpg" alt="Job Seekers logo" class="logo" loading="lazy">
-      <span class="site-name">Job Seekers</span>
+    <div class="topbar-inner">
+      <!-- Logo & Brand -->
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Job Seekers logo" class="logo" loading="lazy">
+        <span class="site-name">Job Seekers</span>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <button id="menuToggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <!-- Navigation -->
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html" class="active">Jobs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="top-actions">
+        <a href="join.html" class="btn small">Join Now</a>
+      </div>
     </div>
-
-    <!-- Hamburger Menu -->
-    <button id="menuToggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="jobs.html">Jobs</a></li>
-        <li><a href="resources.html">Resources</a></li>
-
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Action Button -->
-    <div class="top-actions">
-      <a href="join.html" class="btn small">Join Now</a>
-    </div>
-  </div>
-</header>
-
-
+  </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-left">
         <h1>Jobs</h1>
-        <p class="lead">Explore valuable tools and guidance to support your career journey.
-      Whether you're preparing for interviews, crafting a resume,
-      or improving your professional network, we have you covered.</p>
+        <p class="lead">
+          Explore valuable tools and guidance to support your career journey.
+          Whether you're preparing for interviews, crafting a resume, or improving your professional network — we have you covered.
+        </p>
         <div class="hero-ctas">
           <a class="btn primary" href="resources.html">Browse Resources</a>
-        
         </div>
       </div>
 
       <div class="hero-right" aria-hidden="true">
-        <!-- pill / oval container -->
         <div class="portrait-pill">
           <img src="images/hero-person.webp" alt="Professional person" loading="lazy">
         </div>
@@ -68,12 +65,12 @@
     </div>
   </section>
 
-  
-<main class="jobs-page">
+  <!-- MAIN JOB SEARCH AREA -->
+  <main class="jobs-page">
     <!-- Search Section -->
     <section class="job-search">
-      <h1>Find the perfect job for you</h1>
-      <p>Boost your career opportunities through top job offers in Ghana</p>
+      <h1>Find the Perfect Job for You</h1>
+      <p>Boost your career opportunities through top job offers in Ghana.</p>
       
       <div class="search-bar">
         <select id="functionFilter">
@@ -100,93 +97,89 @@
           <option value="Tamale">Tamale</option>
         </select>
 
-        <button id="findBtn">Find a Job</button>
+        <button id="findBtn" class="btn primary">Find a Job</button>
       </div>
     </section>
 
-    <!-- Featured Jobs -->
+    <!-- Job Results Section -->
     <section class="featured-jobs">
       <h2>Featured Job Offers</h2>
-      <p>Discover top career opportunities from trusted employers in Ghana</p>
+      <p>Discover top career opportunities from trusted employers in Ghana.</p>
+      
+      <!-- Results count appears here -->
+      <p id="resultsCount" class="results-count" style="text-align:center; font-weight:500; color:#333;"></p>
+
+      <!-- Dynamic Job Cards -->
       <div id="jobList" class="job-list"></div>
+
       <div class="center">
         <button class="btn-load">All Job Offers</button>
       </div>
     </section>
   </main>
 
+  <!-- CONTACT CTA -->
+  <section class="contact-cta">
+    <h2>Reach out to us</h2>
+    <p>
+      Do you have questions about applying for jobs, preparing a resume, or<br>
+      improving your chances of success? We’d love to hear from you.
+    </p>
+    <a href="contact.html" class="btn">Get In Touch</a>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
+        <p>
+          At <strong>Job Seekers</strong>, our mission is to provide resources, guidance, 
+          and real opportunities to help individuals find meaningful employment.  
+          We connect motivated applicants with trusted employers.
+        </p>
+      </div>
 
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
 
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Resume Writing</a></li>
+          <li><a href="#">Cover Letter Tips</a></li>
+          <li><a href="#">Interview Preparation</a></li>
+          <li><a href="#">Job Search Strategies</a></li>
+          <li><a href="#">Career Development</a></li>
+        </ul>
+      </div>
 
-
-
-<!-- Contact Call-to-Action -->
-<section class="contact-cta">
-  <h2>Reach out to us</h2>
-  <p>
-    Do you have questions about applying for jobs, preparing a resume, or<br>
-    improving your chances of success? We’d love to hear from you.
-  </p>
-  <a href="contact.html" class="btn">Get In Touch</a>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-left">
-      <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
-      <p>
-        At <strong>Job Seekers</strong>, our mission is to provide resources, guidance, 
-        and real opportunities to help individuals find meaningful employment.  
-        We connect motivated applicants with trusted employers.
-      </p>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">🌐 Website</a></li>
+          <li><a href="mailto:info@jobseekers.com">📧 Email</a></li>
+          <li><a href="#">📱 WhatsApp</a></li>
+          <li><a href="#">📞 Telephone</a></li>
+        </ul>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer-links">
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Cookies Policy</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-links">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">Resume Writing</a></li>
-        <li><a href="#">Cover Letter Tips</a></li>
-        <li><a href="#">Interview Preparation</a></li>
-        <li><a href="#">Job Search Strategies</a></li>
-        <li><a href="#">Career Development</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-links">
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="#">🌐 Website</a></li>
-        <li><a href="mailto:info@jobseekers.com">📧 Email</a></li>
-        <li><a href="#">📱 WhatsApp</a></li>
-        <li><a href="#">📞 Telephone</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-
-  <!-- footer -->
   <footer class="site-footer">
     <div class="container">
       <p>&copy; <span id="year"></span> Job Seekers</p>
     </div>
   </footer>
 
-
-  <script src="scripts/index.js"></script>
+  <!-- Scripts -->
+  <script src="scripts/jobs.js"></script>
   <script>
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-
   </script>
 </body>
 </html>
