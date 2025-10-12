@@ -124,6 +124,82 @@ body {
   font-size: 0.9rem;
 }
 
+/* APPLY MODAL */
+.apply-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.apply-modal.show {
+  display: flex;
+}
+
+.apply-modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.apply-modal-content h2 {
+  margin-top: 0;
+  color: var(--deep-blue);
+  font-size: 1.4rem;
+}
+
+.apply-modal-content label {
+  display: block;
+  margin-top: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.apply-modal-content input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.apply-modal-content button {
+  margin-top: 1.2rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.apply-modal-content button:hover {
+  background: #005ec4;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+
 .job-meta span {
   background: #f2f8ff;
   padding: 0.4rem 0.7rem;

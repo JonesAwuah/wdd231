@@ -1,98 +1,98 @@
 [
   {
-    "title": "Sales Representative",
-    "company": "Ghana Traders Ltd.",
+    "title": "Sales Executive",
+    "company": "Ghana Trade Hub",
+    "description": "Manage client accounts and drive revenue growth through direct sales and customer engagement.",
     "location": "Accra",
     "type": "Full-time",
-    "function": "Sales",
-    "description": "Build client relationships, manage accounts, and meet monthly sales targets in the Greater Accra region."
+    "function": "Sales"
   },
   {
-    "title": "Regional Sales Executive",
-    "company": "BlueSky Distributors",
+    "title": "Sales Assistant",
+    "company": "Golden Gate Distributors",
+    "description": "Assist in promoting products and supporting the main sales team with leads and reports.",
     "location": "Kumasi",
     "type": "Part-time",
-    "function": "Sales",
-    "description": "Support regional expansion through product presentations and customer outreach."
+    "function": "Sales"
   },
   {
-    "title": "Remote Sales Consultant",
-    "company": "TechServe Ghana",
-    "location": "Remote",
+    "title": "Remote Sales Representative",
+    "company": "MarketLink Africa",
+    "description": "Build relationships with clients and promote products online from home.",
+    "location": "Takoradi",
     "type": "Remote",
-    "function": "Sales",
-    "description": "Work with the national sales team to engage new business clients virtually across Ghana."
-  },
-  {
-    "title": "Software Developer",
-    "company": "CodeHaus Technologies",
-    "location": "Accra",
-    "type": "Full-time",
-    "function": "IT",
-    "description": "Develop and maintain scalable web applications using JavaScript, Node.js, and modern frameworks."
+    "function": "Sales"
   },
   {
     "title": "IT Support Specialist",
-    "company": "MetroBank Ghana",
-    "location": "Takoradi",
+    "company": "TechServe Ghana",
+    "description": "Provide troubleshooting and software support for internal staff and clients.",
+    "location": "Accra",
     "type": "Full-time",
-    "function": "IT",
-    "description": "Provide first-line IT support and troubleshoot hardware/software issues for bank staff."
+    "function": "IT"
   },
   {
-    "title": "Web Development Intern",
-    "company": "DigitalPlus Studio",
-    "location": "Tamale",
+    "title": "Web Developer Intern",
+    "company": "Digital Vision",
+    "description": "Assist the web team in maintaining and creating responsive websites.",
+    "location": "Kumasi",
     "type": "Internship",
-    "function": "IT",
-    "description": "Assist in building responsive websites and learn modern coding practices in a collaborative team."
+    "function": "IT"
+  },
+  {
+    "title": "Systems Analyst",
+    "company": "DataCore Technologies",
+    "description": "Analyze system requirements and implement efficient digital solutions for clients.",
+    "location": "Tamale",
+    "type": "Remote",
+    "function": "IT"
   },
   {
     "title": "Marketing Coordinator",
-    "company": "AdVantage Media",
+    "company": "Bright Media",
+    "description": "Coordinate and implement digital marketing campaigns across platforms.",
     "location": "Accra",
     "type": "Full-time",
-    "function": "Marketing",
-    "description": "Coordinate digital campaigns, manage social media pages, and report analytics performance."
+    "function": "Marketing"
   },
   {
     "title": "Social Media Intern",
-    "company": "Kumasi Creative Hub",
+    "company": "AdVibe Ghana",
+    "description": "Support the marketing team with social media strategy and content creation.",
     "location": "Kumasi",
     "type": "Internship",
-    "function": "Marketing",
-    "description": "Create engaging social content to support community-driven brand awareness."
+    "function": "Marketing"
   },
   {
-    "title": "Digital Marketing Strategist",
-    "company": "Pulse Innovations",
+    "title": "Brand Strategist",
+    "company": "BlueSky Innovations",
+    "description": "Develop creative brand positioning and marketing plans to enhance visibility.",
     "location": "Takoradi",
     "type": "Remote",
-    "function": "Marketing",
-    "description": "Develop online strategies for national product launches and influencer campaigns."
+    "function": "Marketing"
   },
   {
-    "title": "Customer Support Agent",
-    "company": "QuickLink Telecom",
+    "title": "Customer Service Officer",
+    "company": "Trust Bank Ghana",
+    "description": "Provide top-notch service to customers, resolving queries and offering guidance.",
     "location": "Accra",
     "type": "Full-time",
-    "function": "Customer Service",
-    "description": "Handle customer inquiries via phone and email with excellent communication and empathy."
+    "function": "Customer Service"
   },
   {
-    "title": "Call Center Associate",
-    "company": "EverReady Services",
+    "title": "Customer Care Assistant",
+    "company": "QuickFix Electronics",
+    "description": "Assist walk-in clients with product inquiries and complaints resolution.",
     "location": "Kumasi",
     "type": "Part-time",
-    "function": "Customer Service",
-    "description": "Assist customers with product information, handle complaints, and log service requests."
+    "function": "Customer Service"
   },
   {
-    "title": "Remote Customer Care Intern",
-    "company": "BrightTech Support",
-    "location": "Remote",
-    "type": "Internship",
-    "function": "Customer Service",
-    "description": "Support clients remotely, manage CRM updates, and learn effective communication protocols."
+    "title": "Call Center Agent",
+    "company": "HelpLine Ghana",
+    "description": "Handle inbound calls and support customers with product or service issues.",
+    "location": "Tamale",
+    "type": "Remote",
+    "function": "Customer Service"
   }
 ]
