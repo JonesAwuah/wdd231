@@ -11,7 +11,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/resources.css">
-
   <style>
     /* Video Popup */
 .video-modal {
@@ -79,7 +78,7 @@
         </ul>
       </nav>
       <div class="top-actions">
-        <a href="join.html" class="btn small">Join Now</a>
+        <a href="contact.html" class="btn small">Join Now</a>
       </div>
     </div>
   </header>
@@ -104,13 +103,14 @@
           <li>Keep formatting clean and easy to scan.</li>
           <li>Highlight your most relevant experiences first.</li>
         </ul>
-        <a href="resume.html" class="btn-more">Explore Resume Tools →</a>
+        <a href="resume-tools.html" class="btn-more">Explore Resume Tools →</a>
       </div>
       <img src="images/resume-tools.webp" alt="Building a strong resume">
     </div>
 
     <hr>
 
+    
     <!-- Guide 2 -->
 <div class="resource reverse">
   <div class="resource-content">
@@ -122,7 +122,11 @@
       <li>Update your resume and LinkedIn for your new direction.</li>
       <li>Start networking in your desired industry.</li>
     </ul>
-    <a href="#" class="btn-more watch-video" data-video="https://www.youtube.com/watch?v=pu__97bVyOc">🎥 Watch Start Career Transition Guide →</a>
+    <a href="#" 
+       class="btn-more watch-video" 
+       data-video="https://www.youtube.com/embed/pu__97bVyOc">
+       🎥 Watch Career Transition Guide →
+    </a>
   </div>
   <img src="images/career-change.jpg" alt="Career change planning">
 </div>
@@ -140,7 +144,11 @@
       <li>Follow up with contacts respectfully and consistently.</li>
       <li>Offer value before asking for help.</li>
     </ul>
-    <a href="#" class="btn-more watch-video" data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID2">🎥 Watch Learn Networking Strategies →</a>
+    <a href="#" 
+       class="btn-more watch-video" 
+       data-video="https://www.youtube.com/embed/jh_dlIye2Ug">
+       🎥 Watch Networking Strategies →
+    </a>
   </div>
   <img src="images/networking.jpg" alt="Professional networking">
 </div>
@@ -158,7 +166,11 @@
       <li>Apply new skills in projects or volunteering.</li>
       <li>Regularly update your portfolio and achievements.</li>
     </ul>
-    <a href="#" class="btn-more watch-video" data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID3">🎥 Watch Skill Development Paths →</a>
+    <a href="#" 
+       class="btn-more watch-video" 
+       data-video="https://www.youtube.com/embed/bHHsWva5avc">
+       🎥 Watch Skill Development Paths →
+    </a>
   </div>
   <img src="images/skill-development.jpg" alt="Skill development and training">
 </div>
@@ -177,8 +189,12 @@
           <li>Practice mindfulness or exercise regularly.</li>
           <li>Make time for family, hobbies, and rest.</li>
         </ul>
-        <a href="#" class="btn-more">Read Balance Tips →</a>
-      </div>
+        <a href="#" 
+       class="btn-more watch-video" 
+       data-video="https://www.youtube.com/embed/4c_xYLwOx-g">
+       🎥 Watch Balance Tips →
+    </a>
+  </div>
       <img src="images/work-life-balance.png" alt="Work-life balance advice">
     </div>
   </section>
@@ -242,6 +258,7 @@
   </footer>
 
   <script>
+    
   const modal = document.getElementById('videoModal');
   const iframe = document.getElementById('videoFrame');
   const closeModal = document.querySelector('.close-modal');
@@ -269,11 +286,11 @@
       iframe.src = '';
     }
   });
-</script>
 
 
-  <script>
+
     document.getElementById('year').textContent = new Date().getFullYear();
+
   </script>
 </body>
 </html>
