@@ -1,98 +1,42 @@
 [
   {
     "title": "Sales Executive",
-    "company": "Ghana Trade Hub",
-    "description": "Manage client accounts and drive revenue growth through direct sales and customer engagement.",
+    "company": "Ghana Trade Ltd",
     "location": "Accra",
     "type": "Full-time",
-    "function": "Sales"
-  },
-  {
-    "title": "Sales Assistant",
-    "company": "Golden Gate Distributors",
-    "description": "Assist in promoting products and supporting the main sales team with leads and reports.",
-    "location": "Kumasi",
-    "type": "Part-time",
-    "function": "Sales"
-  },
-  {
-    "title": "Remote Sales Representative",
-    "company": "MarketLink Africa",
-    "description": "Build relationships with clients and promote products online from home.",
-    "location": "Takoradi",
-    "type": "Remote",
-    "function": "Sales"
+    "function": "Sales",
+    "description": "Drive company sales and manage client relationships."
   },
   {
     "title": "IT Support Specialist",
-    "company": "TechServe Ghana",
-    "description": "Provide troubleshooting and software support for internal staff and clients.",
-    "location": "Accra",
-    "type": "Full-time",
-    "function": "IT"
-  },
-  {
-    "title": "Web Developer Intern",
-    "company": "Digital Vision",
-    "description": "Assist the web team in maintaining and creating responsive websites.",
+    "company": "Tech Solutions Ghana",
     "location": "Kumasi",
-    "type": "Internship",
-    "function": "IT"
-  },
-  {
-    "title": "Systems Analyst",
-    "company": "DataCore Technologies",
-    "description": "Analyze system requirements and implement efficient digital solutions for clients.",
-    "location": "Tamale",
-    "type": "Remote",
-    "function": "IT"
-  },
-  {
-    "title": "Marketing Coordinator",
-    "company": "Bright Media",
-    "description": "Coordinate and implement digital marketing campaigns across platforms.",
-    "location": "Accra",
     "type": "Full-time",
-    "function": "Marketing"
+    "function": "IT",
+    "description": "Provide IT support, troubleshoot systems, and ensure smooth operations."
   },
   {
-    "title": "Social Media Intern",
-    "company": "AdVibe Ghana",
-    "description": "Support the marketing team with social media strategy and content creation.",
-    "location": "Kumasi",
+    "title": "Digital Marketing Intern",
+    "company": "AdPro Agency",
+    "location": "Accra",
     "type": "Internship",
-    "function": "Marketing"
+    "function": "Marketing",
+    "description": "Assist in running online campaigns and managing social media."
   },
   {
-    "title": "Brand Strategist",
-    "company": "BlueSky Innovations",
-    "description": "Develop creative brand positioning and marketing plans to enhance visibility.",
+    "title": "Customer Service Representative",
+    "company": "FastServe",
     "location": "Takoradi",
-    "type": "Remote",
-    "function": "Marketing"
-  },
-  {
-    "title": "Customer Service Officer",
-    "company": "Trust Bank Ghana",
-    "description": "Provide top-notch service to customers, resolving queries and offering guidance.",
-    "location": "Accra",
-    "type": "Full-time",
-    "function": "Customer Service"
-  },
-  {
-    "title": "Customer Care Assistant",
-    "company": "QuickFix Electronics",
-    "description": "Assist walk-in clients with product inquiries and complaints resolution.",
-    "location": "Kumasi",
     "type": "Part-time",
-    "function": "Customer Service"
+    "function": "Customer Service",
+    "description": "Support customers through calls and live chat."
   },
   {
-    "title": "Call Center Agent",
-    "company": "HelpLine Ghana",
-    "description": "Handle inbound calls and support customers with product or service issues.",
+    "title": "Remote Web Developer",
+    "company": "CloudWorks",
     "location": "Tamale",
     "type": "Remote",
-    "function": "Customer Service"
+    "function": "IT",
+    "description": "Work remotely on web application projects and site maintenance."
   }
 ]

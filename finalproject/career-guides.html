@@ -11,6 +11,55 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/resources.css">
+
+  <style>
+    /* Video Popup */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal-content {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.video-modal-content iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+  </style>
 </head>
 <body>
   <!-- HEADER -->
@@ -63,56 +112,57 @@
     <hr>
 
     <!-- Guide 2 -->
-    <div class="resource reverse">
-      <div class="resource-content">
-        <h2>Navigating Career Change</h2>
-        <p>Thinking about switching industries or roles? Learn how to plan a smooth transition.</p>
-        <ul>
-          <li>Identify transferable skills from your past roles.</li>
-          <li>Research emerging career paths and skill trends.</li>
-          <li>Update your resume and LinkedIn for your new direction.</li>
-          <li>Start networking in your desired industry.</li>
-        </ul>
-        <a href="#" class="btn-more">🎥 Watch Start Career Transition Guide →</a>
-      </div>
-      <img src="images/career-change.jpg" alt="Career change planning">
-    </div>
+<div class="resource reverse">
+  <div class="resource-content">
+    <h2>Navigating Career Change</h2>
+    <p>Thinking about switching industries or roles? Learn how to plan a smooth transition.</p>
+    <ul>
+      <li>Identify transferable skills from your past roles.</li>
+      <li>Research emerging career paths and skill trends.</li>
+      <li>Update your resume and LinkedIn for your new direction.</li>
+      <li>Start networking in your desired industry.</li>
+    </ul>
+    <a href="#" class="btn-more watch-video" data-video="https://www.youtube.com/watch?v=pu__97bVyOc">🎥 Watch Start Career Transition Guide →</a>
+  </div>
+  <img src="images/career-change.jpg" alt="Career change planning">
+</div>
 
-    <hr>
+<hr>
 
-    <!-- Guide 3 -->
-    <div class="resource">
-      <div class="resource-content">
-        <h2>Networking for Success</h2>
-        <p>Connections can open doors to new opportunities. Learn how to build a strong professional network.</p>
-        <ul>
-          <li>Attend career fairs, seminars, and online events.</li>
-          <li>Engage on LinkedIn by commenting and sharing insights.</li>
-          <li>Follow up with contacts respectfully and consistently.</li>
-          <li>Offer value before asking for help.</li>
-        </ul>
-        <a href="#" class="btn-more">🎥 Watch Learn Networking Strategies →</a>
-      </div>
-      <img src="images/networking.jpg" alt="Professional networking">
-    </div>
+<!-- Guide 3 -->
+<div class="resource">
+  <div class="resource-content">
+    <h2>Networking for Success</h2>
+    <p>Connections can open doors to new opportunities. Learn how to build a strong professional network.</p>
+    <ul>
+      <li>Attend career fairs, seminars, and online events.</li>
+      <li>Engage on LinkedIn by commenting and sharing insights.</li>
+      <li>Follow up with contacts respectfully and consistently.</li>
+      <li>Offer value before asking for help.</li>
+    </ul>
+    <a href="#" class="btn-more watch-video" data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID2">🎥 Watch Learn Networking Strategies →</a>
+  </div>
+  <img src="images/networking.jpg" alt="Professional networking">
+</div>
 
-    <hr>
+<hr>
 
-    <!-- Guide 4 -->
-    <div class="resource reverse">
-      <div class="resource-content">
-        <h2>Developing In-Demand Skills</h2>
-        <p>Stay competitive in the job market by improving the skills employers value most.</p>
-        <ul>
-          <li>Focus on digital literacy, communication, and teamwork.</li>
-          <li>Take online courses and certifications.</li>
-          <li>Apply new skills in projects or volunteering.</li>
-          <li>Regularly update your portfolio and achievements.</li>
-        </ul>
-        <a href="#" class="btn-more">🎥 Watch Skill Development Paths →</a>
-      </div>
-      <img src="images/skill-development.jpg" alt="Skill development and training">
-    </div>
+<!-- Guide 4 -->
+<div class="resource reverse">
+  <div class="resource-content">
+    <h2>Developing In-Demand Skills</h2>
+    <p>Stay competitive in the job market by improving the skills employers value most.</p>
+    <ul>
+      <li>Focus on digital literacy, communication, and teamwork.</li>
+      <li>Take online courses and certifications.</li>
+      <li>Apply new skills in projects or volunteering.</li>
+      <li>Regularly update your portfolio and achievements.</li>
+    </ul>
+    <a href="#" class="btn-more watch-video" data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID3">🎥 Watch Skill Development Paths →</a>
+  </div>
+  <img src="images/skill-development.jpg" alt="Skill development and training">
+</div>
+
 
     <hr>
 
@@ -141,6 +191,14 @@
     <p>Use our guides to plan, prepare, and progress in your professional journey with confidence.</p>
     <a href="resume-tools.html" class="btn">Start Learning Now</a>
   </section>
+
+  <!-- Video Popup Modal -->
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="close-modal">&times;</span>
+    <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -182,6 +240,37 @@
       <p>&copy; <span id="year"></span> Job Seekers</p>
     </div>
   </footer>
+
+  <script>
+  const modal = document.getElementById('videoModal');
+  const iframe = document.getElementById('videoFrame');
+  const closeModal = document.querySelector('.close-modal');
+
+  // Handle "Watch Video" clicks
+  document.querySelectorAll('.watch-video').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const videoUrl = button.getAttribute('data-video');
+      iframe.src = videoUrl + '?autoplay=1';
+      modal.style.display = 'flex';
+    });
+  });
+
+  // Close modal
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    iframe.src = ''; // stop video
+  });
+
+  // Close on outside click
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      iframe.src = '';
+    }
+  });
+</script>
+
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
