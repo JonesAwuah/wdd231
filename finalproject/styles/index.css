@@ -367,7 +367,17 @@ body{
   cursor: pointer;
 }
 
+.contact-link {
+  color: white;         /* Makes text white */
+  text-decoration: none; /* Removes underline */
+  display: inline-flex;  /* Aligns image and text nicely */
+  align-items: center;   /* Centers vertically */
+  gap: 5px;              /* Space between icon and text */
+}
 
+.contact-link:hover {
+  color: #f0f0f0;       /* Optional: slightly lighter on hover */
+}
 
 
 
