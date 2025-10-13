@@ -91,49 +91,77 @@ body{
   color: var(--accent);
 }
 
-/* ========== DROPDOWN MENU ========== */
-.dropdown {
-  position: relative;
+
+/* === Top Actions (Header Button Container) === */
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.dropdown-content {
-  display: none; /* hidden by default */
-  position: absolute;
-  background-color: var(--deep-blue-2);
-  top: 100%;
-  left: 0;
-  min-width: 200px;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 10px var(--card-shadow);
-  flex-direction: column;
-  padding: 0.5rem 0;
-  z-index: 1001; /* ensure on top */
-}
-
-.dropdown-content li {
-  display: block;
-  width: 100%;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 0.6rem 1rem;
-  color: var(--white);
-  text-decoration: none;
-  text-align: left;
-  transition: background-color 0.2s ease;
-}
-
-.dropdown-content a:hover {
+.top-actions .btn {
   background-color: var(--accent);
   color: var(--white);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
 }
 
-/* Show dropdown ONLY on hover or focus */
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
-  display: flex;
+.top-actions .btn:hover {
+  background-color: var(--white);
+  color: var(--deep-blue);
 }
+
+/* === About Us Section === */
+.about-us {
+  padding: 4rem 2rem;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-us .about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us .about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us .about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-us .about-text h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about-us .about-text p {
+  line-height: 1.6;
+}
+
+
+
+
+
+
 
 /* ========== BUTTONS ========== */
 .btn.small {
