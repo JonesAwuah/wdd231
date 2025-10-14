@@ -241,32 +241,9 @@
     <p>© 2025 Job Seekers | All Rights Reserved</p>
   </footer>
 
-  <script>
-    // Load progress from localStorage
-    const lessons = 8;
-    let completed = 0;
-
-    for (let i = 1; i <= lessons; i++) {
-      if (localStorage.getItem(`lesson${i}Passed`) === "true") {
-        document.getElementById(`lesson${i}`).querySelector("button").textContent = "View Lesson";
-        document.getElementById(`lesson${i}`).querySelector("button").disabled = false;
-        document.getElementById(`status${i}`).textContent = "✔️";
-        completed++;
-        if (i < lessons) {
-          const next = i + 1;
-          document.getElementById(`lesson${next}`).querySelector("button").disabled = false;
-          document.getElementById(`status${next}`).textContent = "🔓";
-        }
-      }
-    }
-
-    const progressPercent = (completed / lessons) * 100;
-    document.getElementById("progressFill").style.width = progressPercent + "%";
-
-    function openLesson(page) {
-      window.location.href = page;
-    }
-  </script>
+  
+    <script src="scripts/base.js"></script>
+  
 
 </body>
 </html>

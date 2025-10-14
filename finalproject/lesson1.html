@@ -243,42 +243,6 @@
     © 2025 Resume Mastery | All Rights Reserved
   </footer>
 
-  <script>
-    const quizForm = document.getElementById('quizForm');
-    const submitQuiz = document.getElementById('submitQuiz');
-    const nextLessonBtn = document.getElementById('nextLessonBtn');
-    const resultMessage = document.getElementById('resultMessage');
-
-    const correctAnswers = {
-      q1: 'b',
-      q2: 'a',
-      q3: 'b',
-      q4: 'b',
-      q5: 'b'
-    };
-
-    submitQuiz.addEventListener('click', () => {
-      const formData = new FormData(quizForm);
-      let score = 0;
-      for (let [q, ans] of Object.entries(correctAnswers)) {
-        if (formData.get(q) === ans) score++;
-      }
-
-      const percent = (score / Object.keys(correctAnswers).length) * 100;
-      if (percent >= 70) {
-        resultMessage.style.color = 'green';
-        resultMessage.textContent = `✅ Excellent! You scored ${percent}%. You may proceed to the next lesson.`;
-        nextLessonBtn.disabled = false;
-        localStorage.setItem('lesson1Passed', 'true');
-      } else {
-        resultMessage.style.color = 'red';
-        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to move on. Try again!`;
-      }
-    });
-
-    nextLessonBtn.addEventListener('click', () => {
-      window.location.href = 'lesson2.html';
-    });
-  </script>
+  <script src="scripts/base.js"></script>
 </body>
 </html>
