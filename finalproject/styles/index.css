@@ -572,6 +572,23 @@ body{
   color: #ffdd57;
 }
 
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 /* footer */
 .site-footer{padding:18px 0;text-align:center;background:#fff;border-top:1px solid rgba(0,0,0,0.04)}
 
