@@ -286,45 +286,6 @@
     <button id="startInterviewBtn">Start Live Interview</button>
   </div>
 
-  <script>
-    const quizForm = document.getElementById('quizForm');
-    const submitQuiz = document.getElementById('submitQuiz');
-    const nextLessonBtn = document.getElementById('nextLessonBtn');
-    const resultMessage = document.getElementById('resultMessage');
-    const popup = document.getElementById('popup');
-    const startInterviewBtn = document.getElementById('startInterviewBtn');
-
-    const correctAnswers = {
-      q1: 'a',
-      q2: 'a',
-      q3: 'a'
-    };
-
-    submitQuiz.addEventListener('click', () => {
-      const formData = new FormData(quizForm);
-      let score = 0;
-      for (let [q, ans] of Object.entries(correctAnswers)) {
-        if (formData.get(q) === ans) score++;
-      }
-
-      const percent = (score / Object.keys(correctAnswers).length) * 100;
-      if (percent >= 70) {
-        resultMessage.style.color = 'green';
-        resultMessage.textContent = `✅ Excellent! You scored ${percent}%. You’ve completed the program!`;
-        nextLessonBtn.disabled = false;
-        localStorage.setItem('lesson5Passed', 'true');
-
-        // Show popup
-        setTimeout(() => popup.classList.add('active'), 600);
-      } else {
-        resultMessage.style.color = 'red';
-        resultMessage.textContent = `❌ You scored ${percent}%. Try again to pass the final lesson.`;
-      }
-    });
-
-    startInterviewBtn.addEventListener('click', () => {
-      window.location.href = 'interview-live.html';
-    });
-  </script>
+ <script src="scripts/lesson.js"></script>
 </body>
 </html>

@@ -273,89 +273,73 @@ GPA 3.8</textarea>
    </main>
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-left">
-        <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
-        <p>
-          At <strong>Job Seekers</strong>, our mission is to provide resources, guidance, 
-          and real opportunities to help individuals find meaningful employment.  
-        </p>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Cookies Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="resume.html">Resume Tools</a></li>
-          <li><a href="#">Cover Letter Tips</a></li>
-          <li><a href="#">Interview Prep</a></li>
-          <li><a href="#">Job Strategies</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="images/logo.jpg" alt="Job Seekers Logo" class="footer-logo">
+      <p>
+        At <strong>Job Seekers</strong>, our mission is to provide resources, guidance, 
+        and real opportunities to help individuals find meaningful employment.  
+        We connect motivated applicants with trusted employers.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="resume.html">Resume Writing</a></li>
+        <li><a href="application-tips.html">Cover Letter Tips</a></li>
+        <li><a href="interview-coaching.html">Interview Preparation</a></li>
+        <li><a href="jobs.html">Job Search Strategies</a></li>
+        <li><a href="career-guides.html">Career Development</a></li>
+      </ul>
+    </div>
+
+    
+
+      <div class="footer-links">                              
         <h4>Connect</h4>
-        <ul>
-          <li><a href="#">🌐 Website</a></li>
-          <li><a href="#">📧 Email</a></li>
-          <li><a href="#">📱 WhatsApp</a></li>
-          <li><a href="#">📞 Telephone</a></li>
-        </ul>
+        <ul class="contact-list">
+  <li>
+    <a href="https://jonesawuah.github.io/wdd231/finalproject/index.html"  class="contact-link">
+      <img src="images/internet.png" alt="Website" width="20" height="20">
+      Website
+    </a>
+  </li>
+  <li>
+    <a href="contact.html" class="contact-link">
+      <img src="images/gmail.png" alt="Email" width="20" height="20">
+      Email
+    </a>
+  </li>
+  <li>
+    <a href="contact.html" class="contact-link">
+      <img src="images/whatsapp.png" alt="WhatsApp" width="20" height="20">
+      WhatsApp
+    </a>
+  </li>
+  <li>
+    <a href="contact.html" class="contact-link">
+      <img src="images/phone-call.png" alt="Telephone" width="20" height="20">
+      Telephone
+    </a>
+  </li>
+</ul>
       </div>
     </div>
   </footer>
+
 
   <footer>
     &copy; <span id="year"></span> Job Seekers. All rights reserved.
   </footer>
 
-  <script>
-    function escapeHtml(str){return str.replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
-
-    function generateResume(){
-      const name=document.getElementById('name').value.trim();
-      const location=document.getElementById('location').value.trim();
-      const phone=document.getElementById('phone').value.trim();
-      const email=document.getElementById('email').value.trim();
-      const summary=document.getElementById('summary').value.trim();
-      const experience=document.getElementById('experience').value.trim();
-      const education=document.getElementById('education').value.trim();
-      const skills=document.getElementById('skills').value.split(/[,;\n]+/).map(s=>s.trim()).filter(Boolean);
-
-      const contact=[location, phone, email].filter(Boolean).join(' · ');
-
-      const expHtml=experience.split(/\n{2,}/).map(block=>{
-        const lines=block.split(/\n/).map(l=>l.trim());
-        return `<div class="job"><p class="job-title">${escapeHtml(lines[0]||'')}</p><div class="job-meta">${escapeHtml(lines[1]||'')}</div><p class="job-desc">${escapeHtml(lines.slice(2).join(' '))}</p></div>`;
-      }).join('');
-
-      const eduHtml=education.split(/\n{2,}/).map(block=>{
-        const lines=block.split(/\n/).map(l=>l.trim());
-        return `<div class="job"><p class="job-title">${escapeHtml(lines[0]||'')}</p><div class="job-meta">${escapeHtml(lines.slice(1).join(' · '))}</div></div>`;
-      }).join('');
-
-      const skillsHtml=skills.map(s=>`<div class="skill-pill">${escapeHtml(s)}</div>`).join('');
-
-      document.getElementById('resumePreview').innerHTML=`
-        <div class="resume-header">
-          <h1 class="resume-name">${escapeHtml(name)}</h1>
-          <div class="resume-contact">${escapeHtml(contact)}</div>
-        </div>
-        <div class="summary section"><p>${escapeHtml(summary)}</p></div>
-        <div class="section"><h3>Experience</h3>${expHtml}</div>
-        <div class="two-col section">
-          <div class="left-col"><h3>Education</h3>${eduHtml}</div>
-          <div class="right-col"><h3>Skills</h3><div class="skills-list">${skillsHtml}</div></div>
-        </div>
-        <div class="paper-footer">Job Seekers • Resume generated in browser</div>`;
-    }
-
-    function printResume(){generateResume(); window.print();}
-    document.getElementById('year').textContent=new Date().getFullYear();
-    document.addEventListener('DOMContentLoaded',generateResume);
-  </script>
+<script src="scripts/base.js"></script>
 </body>
 </html>

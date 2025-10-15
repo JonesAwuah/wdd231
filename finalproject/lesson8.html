@@ -164,54 +164,6 @@
 
   <footer>© 2025 Resume Mastery | All Rights Reserved</footer>
 
-  <script>
-    // Protect lesson access
-    if (!localStorage.getItem('lesson7Passed')) {
-      alert("You must complete Lesson 7 before accessing Lesson 8.");
-      window.location.href = "lesson7.html";
-    }
-
-    const correctAnswers = {
-      q1: 'b', q2: 'a', q3: 'a',
-      q4: 'a', q5: 'a', q6: 'a', q7: 'a'
-    };
-
-    const submitBtn = document.getElementById('submitQuiz');
-    const viewCertBtn = document.getElementById('viewCertificateBtn');
-    const resultMessage = document.getElementById('resultMessage');
-
-    submitBtn.addEventListener('click', () => {
-      const form = document.getElementById('quizForm');
-      const data = new FormData(form);
-      let score = 0;
-
-      for (let [q, ans] of Object.entries(correctAnswers)) {
-        if (data.get(q) === ans) score++;
-      }
-
-      const percent = (score / Object.keys(correctAnswers).length) * 100;
-
-      if (percent >= 70) {
-        resultMessage.textContent = `✅ Congratulations! You scored ${percent}%.`;
-        resultMessage.style.color = 'green';
-        viewCertBtn.disabled = false;
-        localStorage.setItem('lesson8Passed', 'true');
-      } else {
-        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to unlock the certificate.`;
-        resultMessage.style.color = 'red';
-        viewCertBtn.disabled = true;
-      }
-    });
-
-    viewCertBtn.addEventListener('click', () => {
-      const name = prompt("🎓 Please enter your Full Name for the certificate:");
-      if (name && name.trim() !== "") {
-        localStorage.setItem('userName', name.trim());
-        window.location.href = "certificate.html";
-      } else {
-        alert("You must enter your full name to continue.");
-      }
-    });
-  </script>
+<script src="scripts/lesson.js"></script>
 </body>
 </html>

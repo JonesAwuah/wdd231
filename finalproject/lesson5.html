@@ -228,48 +228,6 @@
     © 2025 Resume Mastery | All Rights Reserved
   </footer>
 
-  <script>
-    if (!localStorage.getItem('lesson4Passed')) {
-      alert("You must complete Lesson 4 before accessing Lesson 5.");
-      window.location.href = "lesson4.html";
-    }
-
-    const quizForm = document.getElementById('quizForm');
-    const submitQuiz = document.getElementById('submitQuiz');
-    const nextLessonBtn = document.getElementById('nextLessonBtn');
-    const resultMessage = document.getElementById('resultMessage');
-
-    const correctAnswers = {
-      q1: 'b',
-      q2: 'b',
-      q3: 'b',
-      q4: 'a',
-      q5: 'c'
-    };
-
-    submitQuiz.addEventListener('click', () => {
-      const formData = new FormData(quizForm);
-      let score = 0;
-      for (let [q, ans] of Object.entries(correctAnswers)) {
-        if (formData.get(q) === ans) score++;
-      }
-
-      const percent = (score / Object.keys(correctAnswers).length) * 100;
-
-      if (percent >= 70) {
-        resultMessage.style.color = 'green';
-        resultMessage.textContent = `✅ Excellent! You scored ${percent}%. You may proceed to the next lesson.`;
-        nextLessonBtn.disabled = false;
-        localStorage.setItem('lesson5Passed', 'true');
-      } else {
-        resultMessage.style.color = 'red';
-        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to move on. Try again!`;
-      }
-    });
-
-    nextLessonBtn.addEventListener('click', () => {
-      window.location.href = 'lesson6.html';
-    });
-  </script>
+ <script src="scripts/lesson.js"></script>
 </body>
 </html>

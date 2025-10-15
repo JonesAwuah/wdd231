@@ -105,18 +105,6 @@
     <button onclick="window.print()">🖨️ Print / Download Certificate</button>
   </div>
 
-  <script>
-    const userName = localStorage.getItem('userName');
-    if (!userName) {
-      alert("Please return to Lesson 8 and enter your name before viewing the certificate.");
-      window.location.href = "lesson8.html";
-    } else {
-      document.getElementById('userName').textContent = userName;
-    }
-
-    const date = new Date();
-    const formattedDate = date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
-    document.getElementById('dateField').innerHTML = `<br><em>Date of Completion:</em> ${formattedDate}`;
-  </script>
+ <script src="scripts/lesson.js"></script>
 </body>
 </html>

@@ -240,40 +240,6 @@
     © 2025 Job Seekers | Interview Coaching Program
   </footer>
 
-  <script>
-    const quizForm = document.getElementById('quizForm');
-    const submitQuiz = document.getElementById('submitQuiz');
-    const nextLessonBtn = document.getElementById('nextLessonBtn');
-    const resultMessage = document.getElementById('resultMessage');
-
-    const correctAnswers = {
-      q1: 'a',
-      q2: 'a',
-      q3: 'a'
-    };
-
-    submitQuiz.addEventListener('click', () => {
-      const formData = new FormData(quizForm);
-      let score = 0;
-      for (let [q, ans] of Object.entries(correctAnswers)) {
-        if (formData.get(q) === ans) score++;
-      }
-
-      const percent = (score / Object.keys(correctAnswers).length) * 100;
-      if (percent >= 70) {
-        resultMessage.style.color = 'green';
-        resultMessage.textContent = `✅ Great work! You scored ${percent}%. You can now continue to Lesson 5.`;
-        nextLessonBtn.disabled = false;
-        localStorage.setItem('lesson4Passed', 'true');
-      } else {
-        resultMessage.style.color = 'red';
-        resultMessage.textContent = `❌ You scored ${percent}%. You need at least 70% to move on. Try again!`;
-      }
-    });
-
-    nextLessonBtn.addEventListener('click', () => {
-      window.location.href = 'interview-lesson5.html';
-    });
-  </script>
+  <script src="scripts/lesson.js"></script>
 </body>
 </html>
